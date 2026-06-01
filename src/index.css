@@ -1,1 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+  --font-display: "Archivo Black", serif;
+  --font-body: "Jost", sans-serif;
+
+  --color-background: #020202;
+  --color-body: #fdfdfd;
+  --color-primary: #00b5ff;
+  --color-secondary: #6ad2fc;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-body);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+}
