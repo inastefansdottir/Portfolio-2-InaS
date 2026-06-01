@@ -16,7 +16,7 @@ export default function Header({
   return (
     <header
       className={clsx(
-        "flex justify-center fixed left-0 top-0 z-50 w-full px-4 sm:px-10 py-3 font-bold",
+        "flex justify-center w-full px-4 sm:px-10 py-3 font-bold",
         isProject ? "text-black" : "bg-black text-primary",
         className
       )}
@@ -35,7 +35,7 @@ export default function Header({
         </NavLink>
 
         <NavLink to="/about" className={clsx("transition-colors")}>
-          ABOUT
+          ABOUT ME
         </NavLink>
       </nav>
     </header>

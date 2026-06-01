@@ -6,7 +6,7 @@ export default function ProjectLayout({ children, className = "" }) {
     <div className="min-h-screen flex flex-col">
       <Header variant="project" className={className} />
 
-      <main className="flex-1 flex justify-center mt-[79px]">{children}</main>
+      <main className="flex-1">{children}</main>
 
       <Footer />
     </div>

@@ -6,7 +6,7 @@ export default function DarkLayout({ children, logoHidden = false }) {
     <div className="min-h-screen flex flex-col">
       <Header variant="dark" logoHidden={logoHidden} />
 
-      <main className="flex-1 flex justify-center">{children}</main>
+      <main className="flex-1">{children}</main>
 
       <Footer />
     </div>
