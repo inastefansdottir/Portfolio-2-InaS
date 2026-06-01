@@ -1,4 +1,6 @@
 import { Routes, Route } from "react-router-dom";
+import DarkLayout from "./layout/DarkLayout";
+import ProjectLayout from "./layout/ProjectLayout";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import HolidazePage from "./pages/HolidazePage";
@@ -9,14 +11,67 @@ import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/about" element={<AboutPage />} />
-      <Route path="/projects/holidaze" element={<HolidazePage />} />
-      <Route path="/projects/bidverse" element={<BidversePage />} />
-      <Route path="/projects/shop" element={<ShopPage />} />
-      <Route path="/projects/petify" element={<PetifyPage />} />
-      <Route path="/not-found" element={<NotFound />} />
-    </Routes>
+    <div className="min-h-screen flex flex-col">
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <DarkLayout logoHidden>
+              <HomePage />
+            </DarkLayout>
+          }
+        />
+
+        <Route
+          path="/about"
+          element={
+            <DarkLayout>
+              <AboutPage />
+            </DarkLayout>
+          }
+        />
+
+        <Route
+          path="/projects/holidaze"
+          element={
+            <ProjectLayout className="bg-[#558C91]">
+              <HolidazePage />
+            </ProjectLayout>
+          }
+        />
+        <Route
+          path="/projects/bidverse"
+          element={
+            <ProjectLayout className="bg-[#6666FF]">
+              <BidversePage />
+            </ProjectLayout>
+          }
+        />
+        <Route
+          path="/projects/shop"
+          element={
+            <ProjectLayout className="bg-[#1D4ED8]">
+              <ShopPage />
+            </ProjectLayout>
+          }
+        />
+        <Route
+          path="/projects/petify"
+          element={
+            <ProjectLayout className="bg-[#A796E3]">
+              <PetifyPage />
+            </ProjectLayout>
+          }
+        />
+        <Route
+          path="/not-found"
+          element={
+            <ProjectLayout>
+              <NotFound />
+            </ProjectLayout>
+          }
+        />
+      </Routes>
+    </div>
   );
 }
