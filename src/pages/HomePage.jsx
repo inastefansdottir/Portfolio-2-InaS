@@ -1,6 +1,8 @@
 import heroImage from "../assets/hero-image.png";
 import PortfolioSVG from "../assets/portfolio.svg?react";
 import holidazeMockup from "../assets/holidaze-mockup.png";
+import Tag from "../components/Tag";
+import Button from "../components/Button";
 
 export default function HomePage() {
   return (
@@ -36,14 +38,24 @@ export default function HomePage() {
             </h3>
 
             {/* Tags */}
-            <div></div>
+            <div className="flex gap-1.5 mt-2.5 mb-4">
+              <Tag variant="light">Final Exam 2</Tag>
+              <Tag>TypeScript</Tag>
+              <Tag>Tailwind CSS</Tag>
+              <Tag>REST API</Tag>
+              <Tag>React</Tag>
+            </div>
 
-            <p className="max-w-[380px] w-full">
+            <p className="max-w-[380px] w-full mb-8">
               A modern accommodation booking platform where users can browse
               venues, search by location, guests and dates, create bookings, and
               manage profiles. Venue managers can create listings, edit venues,
               and view bookings through a role-based dashboard.
             </p>
+
+            <Button color={"primary"} to={"/projects/holidaze"}>
+              VIEW CASE STUDY
+            </Button>
           </div>
 
           <img src={holidazeMockup} className="max-w-[524px] w-full" />
