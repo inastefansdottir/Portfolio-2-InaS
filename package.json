@@ -1,0 +1,35 @@
+{
+  "name": "portfolio-2-inas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inastefansdottir/Portfolio-2-InaS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/inastefansdottir/Portfolio-2-InaS/issues"
+  },
+  "homepage": "https://github.com/inastefansdottir/Portfolio-2-InaS#readme",
+  "dependencies": {
+    "framer-motion": "^12.40.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-router-dom": "^7.16.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "@vitejs/plugin-react": "^6.0.2",
+    "tailwindcss": "^4.3.0",
+    "vite": "^8.0.16"
+  }
+}
