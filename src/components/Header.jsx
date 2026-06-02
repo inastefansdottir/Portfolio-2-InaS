@@ -10,8 +10,17 @@ export default function Header({
   className = "",
 }) {
   const isProject = variant === "project";
-
   const logo = isProject ? logoBlack : logoBlue;
+
+  const navLinkClass = ({ isActive }) =>
+    clsx(
+      "transition-colors",
+      isProject
+        ? "text-black hover:text-black/60"
+        : isActive
+        ? "text-body"
+        : "text-primary hover:text-body"
+    );
 
   return (
     <header
@@ -22,7 +31,7 @@ export default function Header({
       )}
     >
       <nav className="flex items-center justify-between max-w-[1300px] w-full">
-        <NavLink to="/projects" className={clsx("transition-colors")}>
+        <NavLink to="/projects" className={navLinkClass}>
           PROJECTS
         </NavLink>
 
@@ -34,7 +43,7 @@ export default function Header({
           <img src={logo} alt="Ína logo" />
         </NavLink>
 
-        <NavLink to="/about" className={clsx("transition-colors")}>
+        <NavLink to="/about" className={navLinkClass}>
           ABOUT ME
         </NavLink>
       </nav>

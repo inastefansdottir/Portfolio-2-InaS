@@ -44,7 +44,7 @@ export default function Button({
   const colors = buttonColors[variant] || buttonColors.primary;
 
   const classes = clsx(
-    "relative z-10 inline-block overflow-hidden bg-transparent px-[30px] py-3 font-medium transition-colors duration-200 ease-in-out",
+    "relative z-10 inline-block overflow-hidden bg-transparent px-[30px] py-3 font-medium transition-colors duration-200 ease-in-out tracking-wider",
     "border",
     "before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:transition-transform before:duration-200 before:ease-in-out",
     "hover:before:scale-x-100",
