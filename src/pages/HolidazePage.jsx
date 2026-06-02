@@ -9,6 +9,9 @@ import image5 from "../assets/holidaze/image-5.png";
 import image6 from "../assets/holidaze/image-6.png";
 import image7 from "../assets/holidaze/image-7.png";
 import styleGuide from "../assets/holidaze/style-guide.png";
+import ProjectNavCard from "../components/ProjectNavCard";
+import petifyMockup from "../assets/petify/petify-css-mockup.png";
+import shopMockup from "../assets/shop/shop-mockup.png";
 
 export default function HolidazePage() {
   return (
@@ -388,6 +391,28 @@ export default function HolidazePage() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div>
+        <section className="flex w-full justify-center px-4 mt-[250px] mb-20 sm:px-10">
+          <div className="flex w-full max-w-[1300px] justify-between gap-[36px]">
+            <ProjectNavCard
+              to="/projects/petify"
+              image={petifyMockup}
+              label="Previous Project"
+              title="Petify"
+              direction="previous"
+            />
+
+            <ProjectNavCard
+              to="/projects/shop"
+              image={shopMockup}
+              label="Next Project"
+              title="Online Shop"
+              direction="next"
+            />
+          </div>
+        </section>
       </div>
     </div>
   );

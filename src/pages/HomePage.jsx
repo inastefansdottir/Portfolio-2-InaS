@@ -14,7 +14,7 @@ export default function HomePage() {
       <div className="flex w-full justify-center gap-6 mt-[180px] mb-[300px]">
         <PortfolioSVG className="w-[90px]" />
         <div className="grid gap-1">
-          <span className="text-secondary font-bold">Ína S. Stefánsdótirr</span>
+          <span className="text-secondary font-bold">Ína S. Stefánsdóttir</span>
           <p className="w-[240px]">
             UI/UX Designer & Frontend Developer focused on creating clean,
             user-centered experiences.
