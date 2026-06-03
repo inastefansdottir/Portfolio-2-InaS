@@ -1,10 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import DarkLayout from "./layout/DarkLayout";
 import ProjectLayout from "./layout/ProjectLayout";
+import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import HolidazePage from "./pages/HolidazePage";
-import BidversePage from "./pages/Bidverse";
+import BidversePage from "./pages/BidversePage";
 import ShopPage from "./pages/ShopPage";
 import PetifyPage from "./pages/PetifyPage";
 import NotFound from "./pages/NotFound";
@@ -12,6 +13,8 @@ import NotFound from "./pages/NotFound";
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
+      <ScrollToTop />
+
       <Routes>
         <Route
           path="/"
