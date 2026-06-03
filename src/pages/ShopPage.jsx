@@ -42,7 +42,7 @@ export default function ShopPage() {
 
       <div className="flex flex-col items-center mt-[250px] px-4 sm:px-10 gap-[250px]">
         {/* Section 1 */}
-        <div className="flex justify-between items-start max-w-[1078px] w-full">
+        <section className="flex justify-between items-start max-w-[1078px] w-full">
           <div className="flex items-center gap-3">
             <span className="inline-block font-display text-[55px] leading-none text-[#3B82F6]">
               1.
@@ -65,7 +65,7 @@ export default function ShopPage() {
               routing, API data, and shared cart state across multiple pages.
             </p>
           </div>
-        </div>
+        </section>
 
         <section className="grid gap-[100px] max-w-[1078px] w-full">
           <div className="flex justify-between items-start gap-[34px]">
