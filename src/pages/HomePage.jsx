@@ -1,6 +1,9 @@
 import heroImage from "../assets/hero-image.png";
 import PortfolioSVG from "../assets/portfolio.svg?react";
 import holidazeMockup from "../assets/holidaze/holidaze-mockup.png";
+import bidverseMockup from "../assets/bidverse/bidverse-mockup.png";
+import shopMockup from "../assets/shop/shop-mockup.png";
+import petifyMockup from "../assets/petify/petify-css-mockup.png";
 import Tag from "../components/Tag";
 import Button from "../components/Button";
 
@@ -58,12 +61,22 @@ export default function HomePage() {
             </Button>
           </div>
 
-          <img src={holidazeMockup} className="max-w-[524px] w-full" />
+          <div className="max-w-[524px] w-full">
+            <img
+              src={holidazeMockup}
+              className="object-cover w-full h-[312px]"
+            />
+          </div>
         </div>
 
         {/* Bidverse section */}
         <div className="flex justify-between items-center max-w-[1300px] w-full mx-auto">
-          <img src={holidazeMockup} className="max-w-[524px] w-full" />
+          <div className="max-w-[524px] w-full">
+            <img
+              src={bidverseMockup}
+              className="object-cover w-full h-[312px]"
+            />
+          </div>
 
           <div className="flex flex-col items-end">
             <h3 className="text-primary text-4xl">
@@ -126,12 +139,16 @@ export default function HomePage() {
             </Button>
           </div>
 
-          <img src={holidazeMockup} className="max-w-[524px] w-full" />
+          <div className="max-w-[524px] w-full">
+            <img src={shopMockup} className="object-cover w-full h-[312px]" />
+          </div>
         </div>
 
         {/* Petify section */}
         <div className="flex justify-between items-center max-w-[1300px] w-full mx-auto">
-          <img src={holidazeMockup} className="max-w-[524px] w-full" />
+          <div className="max-w-[524px] w-full">
+            <img src={petifyMockup} className="object-cover w-full h-[312px]" />
+          </div>
 
           <div className="flex flex-col items-end">
             <h3 className="text-primary text-4xl">

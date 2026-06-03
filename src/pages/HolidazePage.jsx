@@ -11,7 +11,7 @@ import image7 from "../assets/holidaze/image-7.png";
 import styleGuide from "../assets/holidaze/style-guide.png";
 import ProjectNavCard from "../components/ProjectNavCard";
 import petifyMockup from "../assets/petify/petify-css-mockup.png";
-import shopMockup from "../assets/shop/shop-mockup.png";
+import bidverseMockup from "../assets/bidverse/bidverse-mockup.png";
 
 export default function HolidazePage() {
   return (
@@ -405,10 +405,10 @@ export default function HolidazePage() {
             />
 
             <ProjectNavCard
-              to="/projects/shop"
-              image={shopMockup}
+              to="/projects/bidverse"
+              image={bidverseMockup}
               label="Next Project"
-              title="Online Shop"
+              title="Bidverse"
               direction="next"
             />
           </div>

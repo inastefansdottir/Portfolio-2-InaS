@@ -8,7 +8,7 @@ import image4 from "../assets/bidverse/image-4.png";
 import image5 from "../assets/bidverse/image-5.png";
 import styleGuide from "../assets/bidverse/style-guide.png";
 import ProjectNavCard from "../components/ProjectNavCard";
-import petifyMockup from "../assets/petify/petify-css-mockup.png";
+import holidazeMockup from "../assets/holidaze/holidaze-mockup.png";
 import shopMockup from "../assets/shop/shop-mockup.png";
 
 export default function BidversePage() {
@@ -289,10 +289,10 @@ export default function BidversePage() {
         <section className="flex w-full justify-center mb-20">
           <div className="flex w-full max-w-[1300px] justify-between gap-[36px]">
             <ProjectNavCard
-              to="/projects/petify"
-              image={petifyMockup}
+              to="/projects/holidaze"
+              image={holidazeMockup}
               label="Previous Project"
-              title="Petify"
+              title="Holidaze"
               direction="previous"
             />
 
