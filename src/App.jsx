@@ -53,7 +53,7 @@ export default function App() {
         <Route
           path="/projects/shop"
           element={
-            <ProjectLayout className="bg-[#1D4ED8]">
+            <ProjectLayout className="bg-[#3B82F6]">
               <ShopPage />
             </ProjectLayout>
           }

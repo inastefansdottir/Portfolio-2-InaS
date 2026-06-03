@@ -1,4 +1,4 @@
-import holidazeMockup from "../assets/no-background/holidaze-no-background.png";
+import holidazeMockup from "../assets/holidaze/holidaze-no-background.png";
 import holidazeLogo from "../assets/logos/holidaze-logo.svg";
 import ProjectHero from "../components/ProjectHero";
 import image1 from "../assets/holidaze/image-1.png";

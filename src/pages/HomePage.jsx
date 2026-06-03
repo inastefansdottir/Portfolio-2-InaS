@@ -1,6 +1,6 @@
 import heroImage from "../assets/hero-image.png";
 import PortfolioSVG from "../assets/portfolio.svg?react";
-import holidazeMockup from "../assets/holidaze-mockup.png";
+import holidazeMockup from "../assets/holidaze/holidaze-mockup.png";
 import Tag from "../components/Tag";
 import Button from "../components/Button";
 
