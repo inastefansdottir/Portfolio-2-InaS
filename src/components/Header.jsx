@@ -25,7 +25,7 @@ export default function Header({
   return (
     <header
       className={clsx(
-        "flex justify-center w-full px-4 sm:px-10 py-3 font-bold",
+        "flex justify-center w-full px-4 sm:px-10 py-3 font-bold z-10",
         isProject ? "text-black" : "bg-black text-primary",
         className
       )}

@@ -16,14 +16,7 @@ export default function App() {
       <ScrollToTop />
 
       <Routes>
-        <Route
-          path="/"
-          element={
-            <DarkLayout logoHidden>
-              <HomePage />
-            </DarkLayout>
-          }
-        />
+        <Route path="/" element={<HomePage />} />
 
         <Route
           path="/about"
