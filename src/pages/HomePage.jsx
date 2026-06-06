@@ -5,12 +5,13 @@ import Footer from "../components/Footer";
 import introVideo from "../assets/animations/hero-intro.webm";
 import loopVideo from "../assets/animations/hero-loop.webm";
 import PortfolioSVG from "../assets/portfolio.svg?react";
-import holidazeThumbnail from "../assets/thumbnails/holidaze.webp";
-import bidverseThumbnail from "../assets/thumbnails/bidverse.webp";
-import shopThumbnail from "../assets/thumbnails/online-shop.webp";
-import petifyThumbnail from "../assets/thumbnails/petify.webp";
-import Tag from "../components/Tag";
-import Button from "../components/Button";
+
+import holidazeMockup from "../assets/holidaze/holidaze-no-background.png";
+import bidverseMockup from "../assets/bidverse/bidverse-no-background.png";
+import shopMockup from "../assets/shop/shop-no-background.png";
+import petifyMockup from "../assets/petify/petify-no-background.png";
+
+import ProjectThumbnail from "../components/ProjectThumbnail";
 
 export default function HomePage() {
   const [showLoop, setShowLoop] = useState(false);
@@ -87,162 +88,87 @@ export default function HomePage() {
           </div>
         </div>
 
-        <h2 className="flex justify-center text-5xl text-secondary mb-[130px]">
+        <h2 className="flex justify-center text-5xl text-secondary mb-[100px]">
           PROJECTS
         </h2>
 
-        <div className="flex flex-col gap-[250px] px-4 sm:px-10 mb-[250px]">
-          {/* Holidaze section */}
-          <div className="flex justify-between items-center max-w-[1300px] w-full mx-auto">
-            <div>
-              <h3 className="text-primary text-4xl">
-                {" "}
-                H<span className="text-body">O</span>L
-                <span className="text-body">I</span>DAZ
-                <span className="text-body">E</span>
-              </h3>
-
-              {/* Tags */}
-              <div className="flex gap-1.5 mt-2.5 mb-4">
-                <Tag variant="light">Final Exam 2</Tag>
-                <Tag>TypeScript</Tag>
-                <Tag>Tailwind CSS</Tag>
-                <Tag>REST API</Tag>
-                <Tag>React</Tag>
-              </div>
-
-              <p className="max-w-[380px] w-full mb-8">
-                A modern accommodation booking platform where users can browse
-                venues, search by location, guests and dates, create bookings,
-                and manage profiles. Venue managers can create listings, edit
-                venues, and view bookings through a role-based dashboard.
-              </p>
-
-              <Button color={"primary"} to={"/projects/holidaze"}>
-                VIEW CASE STUDY
-              </Button>
-            </div>
-
-            <div className="max-w-[524px] w-full">
-              <img
-                src={holidazeThumbnail}
-                className="object-cover w-full h-[312px]"
-              />
-            </div>
-          </div>
-
-          {/* Bidverse section */}
-          <div className="flex justify-between items-center max-w-[1300px] w-full mx-auto">
-            <div className="max-w-[524px] w-full">
-              <img
-                src={bidverseThumbnail}
-                className="object-cover w-full h-[312px]"
-              />
-            </div>
-
-            <div className="flex flex-col items-end">
-              <h3 className="text-primary text-4xl">
-                {" "}
-                B<span className="text-body">I</span>DV
-                <span className="text-body">E</span>RS
-                <span className="text-body">E</span>
-              </h3>
-
-              {/* Tags */}
-              <div className="flex gap-1.5 mt-2.5 mb-4">
-                <Tag variant="light">Semester Project 2</Tag>
-                <Tag>JavaScript</Tag>
-                <Tag>Tailwind CSS</Tag>
-                <Tag>REST API</Tag>
-              </div>
-
-              <p className="max-w-[380px] w-full mb-8 text-right">
-                A modern auction platform where users can browse listings,
-                create auctions, place bids, and manage their profile. The
-                project focuses on responsive UI, clear bidding flows, credit
-                visibility, image uploads, and polished frontend interactions.
-              </p>
-
-              <Button color={"primary"} to={"/projects/bidverse"}>
-                VIEW CASE STUDY
-              </Button>
-            </div>
-          </div>
-
-          {/* Online shop section */}
-          <div className="flex justify-between items-center max-w-[1300px] w-full mx-auto">
-            <div>
-              <h3 className="text-primary text-4xl">
-                {" "}
-                <span className="text-body">O</span>NL
-                <span className="text-body">I</span>N
-                <span className="text-body">E</span> SH
-                <span className="text-body">O</span>P
-              </h3>
-
-              {/* Tags */}
-              <div className="flex gap-1.5 mt-2.5 mb-4">
-                <Tag variant="light">JS Frameworks</Tag>
-                <Tag>TypeScript</Tag>
-                <Tag>Tailwind CSS</Tag>
-                <Tag>REST API</Tag>
-                <Tag>React</Tag>
-              </div>
-
-              <p className="max-w-[380px] w-full mb-8">
-                A functional ecommerce website built with React and TypeScript.
-                Users can browse products from the Noroff API, search and sort
-                items, view product details, add products to the cart, update
-                quantities, and complete a simple checkout flow.
-              </p>
-
-              <Button color={"primary"} to={"/projects/shop"}>
-                VIEW CASE STUDY
-              </Button>
-            </div>
-
-            <div className="max-w-[524px] w-full">
-              <img
-                src={shopThumbnail}
-                className="object-cover w-full h-[312px]"
-              />
-            </div>
-          </div>
-
-          {/* Petify section */}
-          <div className="flex justify-between items-center max-w-[1300px] w-full mx-auto">
-            <div className="max-w-[524px] w-full">
-              <img
-                src={petifyThumbnail}
-                className="object-cover w-full h-[312px]"
-              />
-            </div>
-
-            <div className="flex flex-col items-end">
-              <h3 className="text-primary text-4xl">
-                {" "}
-                P<span className="text-body">E</span>T
-                <span className="text-body">I</span>F
-                <span className="text-body">Y</span>
-              </h3>
-
-              {/* Tags */}
-              <div className="flex gap-1.5 mt-2.5 mb-4">
-                <Tag variant="light">CSS Frameworks</Tag>
-                <Tag>HTML</Tag>
-                <Tag>Bootstrap</Tag>
-                <Tag>Sass</Tag>
-              </div>
-
-              <p className="max-w-[380px] w-full mb-8 text-right">
-                A playful pet-focused social media interface adapted into a
-                static Bootstrap and SASS project. The design is based on my
-                original JavaScript 2 social media app and focuses on responsive
-                layouts, soft visual styling, and framework customization.
-              </p>
-
-              <Button to={"/projects/petify"}>VIEW CASE STUDY</Button>
-            </div>
+        <div className="flex flex-col items-center px-4 sm:px-10">
+          <div className="max-w-[1300px] w-full grid grid-cols-2 max-[1100px]:grid-cols-1 gap-[30px]">
+            <ProjectThumbnail
+              titleParts={[
+                { text: "H", color: "primary" },
+                { text: "O", color: "body" },
+                { text: "L", color: "primary" },
+                { text: "I", color: "body" },
+                { text: "DAZ", color: "primary" },
+                { text: "E", color: "body" },
+              ]}
+              meta="Final Exam 2 - 2026"
+              description="A modern accommodation booking platform where users can browse venues, search by location, guests and dates, create bookings, and manage profiles."
+              buttonVariant="holidaze"
+              image={holidazeMockup}
+              imageAlt="Holidaze website mockup"
+              to="/projects/holidaze"
+              projectColor="#558C91"
+              projectLight="#B4D8D8"
+            />
+            <ProjectThumbnail
+              titleParts={[
+                { text: "B", color: "primary" },
+                { text: "I", color: "body" },
+                { text: "DV", color: "primary" },
+                { text: "E", color: "body" },
+                { text: "RS", color: "primary" },
+                { text: "E", color: "body" },
+              ]}
+              meta="Semester Project 2 - 2025"
+              description="A modern auction platform where users can browse listings, create auctions, place bids, and manage their profile."
+              image={bidverseMockup}
+              imageAlt="BidVerse website mockup"
+              to="/projects/bidverse"
+              projectColor="#6666FF"
+              projectLight="#C5C5E8"
+            />
+            <ProjectThumbnail
+              titleParts={[
+                { text: "O", color: "body" },
+                { text: "NL", color: "primary" },
+                { text: "I", color: "body" },
+                { text: "N", color: "primary" },
+                { text: "E ", color: "body" },
+                { text: "SH", color: "primary" },
+                { text: "O", color: "body" },
+                { text: "P", color: "primary" },
+              ]}
+              meta="JS Frameworks - 2026"
+              description="A functional ecommerce website built with React and TypeScript. Users can browse products, view product details and complete a simple checkout flow."
+              buttonVariant="shop"
+              image={shopMockup}
+              imageAlt="Online shop website mockup"
+              imageClassName="w-[320px]! max-[1100px]:w-[400px]!"
+              to="/projects/shop"
+              projectColor="#3B82F6"
+              projectLight="#BFDBFE"
+            />
+            <ProjectThumbnail
+              titleParts={[
+                { text: "P", color: "primary" },
+                { text: "E", color: "body" },
+                { text: "T", color: "primary" },
+                { text: "I", color: "body" },
+                { text: "F", color: "primary" },
+                { text: "Y", color: "body" },
+              ]}
+              meta="CSS Frameworks 2 - 2025"
+              description="A playful pet-focused social media interface adapted into a static Bootstrap and SASS project. The design is based on my original JavaScript 2 social media app."
+              buttonVariant="petify"
+              image={petifyMockup}
+              imageAlt="Petify website mockup"
+              imageClassName="w-[320px]! max-[1100px]:w-[400px]!"
+              to="/projects/petify"
+              projectColor="#998ACF"
+              projectLight="#D2D2E6"
+            />
           </div>
         </div>
       </main>
