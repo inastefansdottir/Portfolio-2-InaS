@@ -96,7 +96,7 @@ export default function ProjectThumbnail({
         </div>
       </div>
 
-      <div className="relative z-10 w-[280px] overflow-hidden max-[1100px]:w-[400px] max-[720px]:w-full">
+      <div className="relative z-10 w-[320px] max-[1300px]:w-[260px] overflow-hidden max-[1100px]:w-[400px] max-[720px]:w-full">
         {image && (
           <img
             src={image}

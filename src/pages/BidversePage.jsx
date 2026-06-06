@@ -5,8 +5,16 @@ import image1 from "../assets/bidverse/image-1.png";
 import image2 from "../assets/bidverse/image-2.png";
 import image3 from "../assets/bidverse/image-3.png";
 import image4 from "../assets/bidverse/image-4.png";
-import image5 from "../assets/bidverse/image-5.png";
+import image5 from "../assets/bidverse/image-5.webp";
+import image6 from "../assets/bidverse/image-6.png";
+import image7 from "../assets/bidverse/image-7.webp";
+import image8 from "../assets/bidverse/image-8.png";
+import image9 from "../assets/bidverse/image-9.png";
+import video1 from "../assets/bidverse/video-1.webm";
+import video2 from "../assets/bidverse/video-2.webm";
+import video3 from "../assets/bidverse/video-3.webm";
 import styleGuide from "../assets/bidverse/style-guide.png";
+import styleGuideSmall from "../assets/bidverse/style-guide-sm.png";
 import ProjectNavCard from "../components/ProjectNavCard";
 import holidazeMockup from "../assets/holidaze/holidaze-mockup.png";
 import shopMockup from "../assets/shop/shop-mockup.png";
@@ -93,7 +101,15 @@ export default function BidversePage() {
               intuitive.
             </p>
             <div className="max-w-[850px] w-full">
-              <img src={image4} alt="" className="w-full object-cover" />
+              <video
+                src={video1}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                className="w-full"
+              />
             </div>
           </div>
         </section>
@@ -127,7 +143,15 @@ export default function BidversePage() {
 
       <div className="flex justify-center bg-[#6666FF]/50 py-[80px] w-full px-4 sm:px-10 mt-[100px]">
         <div className="max-w-[1078px] w-full">
-          <img src={image5} alt="" className="w-full object-cover" />
+          <video
+            src={video2}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="w-full"
+          />
         </div>
       </div>
 
@@ -159,9 +183,6 @@ export default function BidversePage() {
               </p>
 
               <div className="mt-[100px]">
-                <p className="text-xl font-bold mb-5">
-                  Customer’s profile page
-                </p>
                 <img src={image4} className="object-cover w-full" />
               </div>
             </div>
@@ -190,8 +211,15 @@ export default function BidversePage() {
               </p>
 
               <div className="mt-[100px]">
-                <p className="text-xl font-bold mb-5">Manager’s profile page</p>
-                <img src={image5} className="object-cover w-full" />
+                <video
+                  src={video3}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  className="w-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -207,9 +235,16 @@ export default function BidversePage() {
         </section>
       </div>
 
-      <div className="flex justify-center bg-[#D8D8FF] py-[80px] w-full px-4 sm:px-10 mt-[100px]">
+      <div className="flex justify-center bg-[#D8D8FF] md:py-20 py-10 w-full px-4 sm:px-10 mt-[100px]">
         <div className="max-w-[1078px] w-full">
-          <img src={styleGuide} alt="" className="w-full object-cover" />
+          <picture>
+            <source media="(max-width: 768px)" srcSet={styleGuideSmall} />
+            <img
+              src={styleGuide}
+              alt="BidVerse style guide"
+              className="w-full object-cover"
+            />
+          </picture>
         </div>
       </div>
 
@@ -242,16 +277,16 @@ export default function BidversePage() {
           </div>
 
           <div className="mx-auto mt-[100px] grid w-full max-w-[1300px] gap-8 lg:grid-cols-[1fr_1fr]">
-            <img src={image4} alt="" className="h-full w-full object-cover" />
+            <img src={image5} alt="" className="h-full w-full object-cover" />
 
             <div className="grid grid-cols-2 gap-8">
-              <img src={image5} alt="" className="h-full w-full object-cover" />
+              <img src={image6} alt="" className="h-full w-full object-cover" />
 
-              <img src={image5} alt="" className="h-full w-full object-cover" />
+              <img src={image7} alt="" className="h-full w-full object-cover" />
 
-              <img src={image5} alt="" className="h-full w-full object-cover" />
+              <img src={image8} alt="" className="h-full w-full object-cover" />
 
-              <img src={image5} alt="" className="h-full w-full object-cover" />
+              <img src={image9} alt="" className="h-full w-full object-cover" />
             </div>
           </div>
         </section>
