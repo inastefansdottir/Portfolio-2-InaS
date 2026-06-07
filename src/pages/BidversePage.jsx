@@ -51,10 +51,10 @@ export default function BidversePage() {
         ]}
       />
 
-      <div className="flex flex-col items-center px-4 sm:px-10 gap-[250px]">
+      <div className="flex flex-col items-center px-4 sm:px-10 gap-[250px] max-[900px]:gap-25">
         {/* Section 1 */}
         <section className="mt-[130px]">
-          <div className="flex justify-between items-start max-w-[1078px] w-full mx-auto">
+          <div className="flex max-[900px]:flex-col justify-between items-start max-w-[1078px] w-full mx-auto max-[900px]:gap-5">
             <div className="flex items-center gap-3">
               <span className="inline-block font-display text-[55px] leading-none text-[#6666FF]">
                 1.
@@ -77,30 +77,32 @@ export default function BidversePage() {
             </div>
           </div>
 
-          <div className="mt-[100px] mb-[170px] flex w-full max-w-[1300px] items-center justify-between gap-5">
+          <div className="flex max-[900px]:flex-col mt-[100px] mb-[170px] max-[900px]:mb-25 flex w-full max-w-[1300px] items-center justify-between gap-5">
             <img
               src={image1}
               alt=""
-              className="h-auto max-h-[500px] min-w-0 object-contain"
+              className="h-auto max-h-[500px] max-[900px]:max-h-[700px] min-w-0 object-contain"
             />
-            <img
-              src={image2}
-              alt=""
-              className="h-auto max-h-[500px] min-w-0 object-contain"
-            />
-            <img
-              src={image3}
-              alt=""
-              className="h-auto max-h-[500px] min-w-0 object-contain"
-            />
+            <div className="flex gap-5">
+              <img
+                src={image2}
+                alt=""
+                className="h-auto max-h-[500px] max-[900px]:max-h-[700px] min-w-0 object-contain"
+              />
+              <img
+                src={image3}
+                alt=""
+                className="h-auto max-h-[500px] max-[900px]:max-h-[700px] min-w-0 object-contain"
+              />
+            </div>
           </div>
 
-          <div className="flex justify-between max-w-[1300px] w-full">
-            <p className="text-xl font-bold w-[250px] text-right">
+          <div className="flex max-[900px]:flex-col justify-between max-w-[1300px] w-full max-[900px]:gap-10">
+            <p className="text-xl font-bold w-[250px] text-right max-[900px]:text-left">
               Every detail was designed to keep the auction flow clear and
               intuitive.
             </p>
-            <div className="max-w-[850px] w-full">
+            <div className="max-w-[850px] w-full pl-10 max-[900px]:pl-0">
               <video
                 src={video1}
                 autoPlay
@@ -115,7 +117,7 @@ export default function BidversePage() {
         </section>
 
         {/* Section 2 */}
-        <div className="flex justify-between items-start max-w-[1078px] w-full mx-auto">
+        <div className="flex max-[900px]:flex-col justify-between items-start max-w-[1078px] w-full mx-auto max-[900px]:gap-5">
           <div className="flex items-center gap-3">
             <span className="inline-block font-display text-[55px] leading-none text-[#6666FF]">
               2.
@@ -156,9 +158,9 @@ export default function BidversePage() {
       </div>
 
       <div className="flex justify-center px-4 sm:px-10">
-        <section className="grid gap-[100px] max-w-[1078px] w-full mt-[250px]">
+        <section className="grid gap-[100px] max-w-[1078px] w-full mt-[250px] max-[900px]:mt-25">
           {/* Section 3 and 4 */}
-          <div className="flex justify-between items-start gap-[34px]">
+          <div className="flex max-[1100px]:flex-col justify-between items-start gap-[34px] max-[1100px]:gap-[100px]">
             <div className="flex-1">
               <div className="flex items-center gap-3">
                 <span className="inline-block font-display text-[55px] leading-none text-[#6666FF]">
@@ -225,7 +227,7 @@ export default function BidversePage() {
           </div>
 
           {/* Section 5 */}
-          <div className="flex items-center gap-3 self-start mt-[150px]">
+          <div className="flex items-center gap-3 self-start mt-[150px] max-[900px]:mt-0">
             <span className="inline-block font-display text-[55px] leading-none text-[#6666FF]">
               5.
             </span>
@@ -248,10 +250,10 @@ export default function BidversePage() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center px-4 sm:px-10 gap-[250px]">
+      <div className="flex flex-col items-center px-4 sm:px-10 gap-[250px] max-[900px]:gap-25">
         {/* Section 6 */}
-        <section className="mt-[250px]">
-          <div className="flex justify-between items-start max-w-[1078px] w-full mx-auto">
+        <section className="mt-[250px] max-[900px]:mt-25">
+          <div className="flex max-[900px]:flex-col justify-between items-start max-w-[1078px] w-full mx-auto max-[900px]:gap-5">
             <div className="flex items-center gap-3">
               <span className="inline-block font-display text-[55px] leading-none text-[#6666FF]">
                 6.
