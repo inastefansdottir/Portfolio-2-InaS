@@ -54,7 +54,7 @@ export default function HolidazePage() {
       {/* Main content */}
       <section className="flex flex-col items-center mt-[130px] px-4 sm:px-10">
         {/* Section 1 */}
-        <div className="flex justify-between items-start max-w-[1078px] w-full">
+        <div className="flex max-[900px]:flex-col max-[900px]:gap-5 justify-between items-start max-w-[1078px] w-full">
           <div className="flex items-center gap-3">
             <span className="inline-block font-display text-[55px] leading-none text-[#558C91]">
               1.
@@ -76,31 +76,33 @@ export default function HolidazePage() {
           </div>
         </div>
 
-        <div className="mt-[100px] mb-[170px] flex w-full max-w-[1300px] items-center justify-between gap-5">
+        <div className="flex max-[900px]:flex-col mt-[100px] mb-[170px] flex w-full max-w-[1300px] items-center justify-between gap-5">
           <img
             src={image1}
             alt=""
-            className="h-auto max-h-[500px] min-w-0 object-contain"
+            className="h-auto max-h-[500px] max-[900px]:max-h-[700px] min-w-0 object-contain"
           />
-          <img
-            src={image2}
-            alt=""
-            className="h-auto max-h-[500px] min-w-0 object-contain"
-          />
-          <img
-            src={image3}
-            alt=""
-            className="h-auto max-h-[500px] min-w-0 object-contain"
-          />
+          <div className="flex gap-5">
+            <img
+              src={image2}
+              alt=""
+              className="h-auto max-h-[500px] max-[900px]:max-h-[700px] min-w-0 object-contain"
+            />
+            <img
+              src={image3}
+              alt=""
+              className="h-auto max-h-[500px] max-[900px]:max-h-[700px] min-w-0 object-contain"
+            />
+          </div>
         </div>
       </section>
 
       {/* Section 2 */}
       <div className="flex justify-center bg-[#B4D8D8] w-full text-[#285260] px-4 sm:px-10">
-        <section className="flex justify-between items-center max-w-[1300px] w-full py-20">
-          <div>
-            <div className="flex items-center gap-3">
-              <span className="inline-block font-display text-[55px] leading-non">
+        <section className="flex max-[1200px]:flex-col justify-between items-center max-w-[1300px] w-full py-20">
+          <div className="max-[1200px]:flex max-[900px]:flex-col max-[900px]:gap-5 max-[1200px]:items-start max-[1200px]:justify-between max-[1200px]:w-full">
+            <div className="flex max-[1200px]:justify-between items-center gap-3">
+              <span className="inline-block font-display text-[55px] leading-none">
                 2.
               </span>
 
@@ -130,7 +132,7 @@ export default function HolidazePage() {
               </p>
             </div>
           </div>
-          <div className="max-w-[670px] pl-10">
+          <div className="max-[1200px]:max-w-full max-w-[670px] pl-10 max-[1200px]:pl-0 max-[1200px]:mt-25">
             <video
               src={video1}
               autoPlay
@@ -145,10 +147,10 @@ export default function HolidazePage() {
       </div>
 
       <div className="flex justify-center w-full px-4 sm:px-10">
-        <div className="flex flex-col items-center max-w-[1078px] w-full mt-[170px] gap-[250px]">
+        <div className="flex flex-col items-center max-w-[1078px] w-full mt-[170px] gap-[250px] max-[900px]:gap-[100px]">
           {/* Section 3 */}
           <section className="grid gap-[100px]">
-            <div className="flex justify-between items-start">
+            <div className="flex max-[900px]:flex-col max-[900px]:gap-5 justify-between items-start">
               <div className="flex items-center gap-3">
                 <span className="inline-block font-display text-[55px] leading-none text-[#558C91]">
                   3.
@@ -198,7 +200,7 @@ export default function HolidazePage() {
 
           {/* Section 4 */}
           <section className="grid gap-[100px]">
-            <div className="flex justify-between items-start">
+            <div className="flex max-[900px]:flex-col max-[900px]:gap-5 justify-between items-start">
               <div className="flex items-center gap-3">
                 <span className="inline-block font-display text-[55px] leading-none text-[#558C91]">
                   4.
@@ -247,7 +249,7 @@ export default function HolidazePage() {
 
           {/* Section 5 */}
           <section className="grid gap-[100px]">
-            <div className="flex justify-between items-start gap-[34px]">
+            <div className="flex max-[900px]:flex-col justify-between items-start gap-[34px]">
               <div className="flex-1">
                 <div className="flex items-center gap-3">
                   <span className="inline-block font-display text-[55px] leading-none text-[#558C91]">
@@ -283,7 +285,7 @@ export default function HolidazePage() {
               </div>
             </div>
 
-            <div className="flex w-full gap-[34px]">
+            <div className="flex max-[900px]:flex-col w-full gap-[34px]">
               <div className="flex-1">
                 <p className="text-xl font-bold mb-5">
                   Customer’s profile page
@@ -307,7 +309,7 @@ export default function HolidazePage() {
           </section>
 
           {/* Section 6 */}
-          <section className="flex gap-[36px]">
+          <section className="flex max-[1200px]:flex-col gap-[36px]">
             <div className="grid gap-10">
               <div className="flex items-center gap-3">
                 <span className="inline-block font-display text-[55px] leading-none text-[#558C91]">
@@ -360,8 +362,8 @@ export default function HolidazePage() {
           </section>
 
           {/* Section 7 */}
-          <section className="flex gap-[36px]">
-            <div className="flex flex-col justify-between flex-1">
+          <section className="flex max-[800px]:flex-col gap-[36px]">
+            <div className="flex flex-col justify-between flex-1 max-[800px]:gap-[36px]">
               <div className="grid gap-5 max-w-[525px]">
                 <div className="flex items-center gap-3">
                   <span className="inline-block font-display text-[55px] leading-none text-[#558C91]">
@@ -372,23 +374,25 @@ export default function HolidazePage() {
                     Visual Identity
                   </h2>
                 </div>
-                <p>
-                  The <span className="font-bold">visual direction</span> for
-                  Holidaze was inspired by Scandinavian minimalism and modern
-                  accommodation platforms.
-                </p>
-                <p>
-                  The interface uses soft earthy colors, spacious layouts, clean
-                  typography, and warm imagery to create a calm and trustworthy
-                  booking experience. I wanted the design to feel polished and
-                  modern without becoming cold or overly minimal.
-                </p>
-                <p>
-                  The style guide helped keep the experience consistent across
-                  pages, especially as the project grew to include customer
-                  views, manager views, forms, modals, cards, and responsive
-                  layouts.
-                </p>
+                <div className="grid gap-5">
+                  <p>
+                    The <span className="font-bold">visual direction</span> for
+                    Holidaze was inspired by Scandinavian minimalism and modern
+                    accommodation platforms.
+                  </p>
+                  <p>
+                    The interface uses soft earthy colors, spacious layouts,
+                    clean typography, and warm imagery to create a calm and
+                    trustworthy booking experience. I wanted the design to feel
+                    polished and modern without becoming cold or overly minimal.
+                  </p>
+                  <p>
+                    The style guide helped keep the experience consistent across
+                    pages, especially as the project grew to include customer
+                    views, manager views, forms, modals, cards, and responsive
+                    layouts.
+                  </p>
+                </div>
               </div>
 
               <div>
@@ -409,7 +413,7 @@ export default function HolidazePage() {
             A complete booking experience, from discovery to management.
           </h3>
 
-          <div className="flex gap-[30px]">
+          <div className="flex max-[500px]:flex-col gap-[30px]">
             <h4 className="text-xl text-[#B4D8D8]">Reflection</h4>
 
             <div className="grid gap-5 max-w-[550px] w-full flex-1">
@@ -432,7 +436,7 @@ export default function HolidazePage() {
       </div>
 
       <div>
-        <section className="flex w-full justify-center px-4 mt-[250px] mb-20 sm:px-10">
+        <section className="flex w-full justify-center px-4 mt-[250px] max-[900px]:mt-[100px] mb-20 sm:px-10">
           <div className="flex w-full max-w-[1300px] justify-between gap-[36px]">
             <ProjectNavCard
               to="/projects/petify"

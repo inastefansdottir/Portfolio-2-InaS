@@ -17,13 +17,13 @@ export default function ProjectHero({
   return (
     <section
       className={clsx(
-        "flex h-[650px] max-[1100px]:h-[550px] max-[900px]:h-full max-[900px]:pt-25 justify-center bg-linear-to-t from-background px-4 sm:px-10",
+        "flex h-[650px] max-[1100px]:h-[550px] max-[900px]:h-full max-[900px]:pt-10 justify-center bg-linear-to-t from-background px-4 sm:px-10",
         className
       )}
       style={{ "--tw-gradient-to": gradientTo }}
     >
-      <div className="flex max-[900px]:flex-col w-full max-w-[1300px] max-[1100px]:text-sm items-center justify-between gap-12">
-        <div className="flex max-w-[570px] w-full flex-col gap-2">
+      <div className="flex max-[900px]:flex-col w-full max-w-[1300px] max-[1100px]:text-sm items-center justify-between max-[900px]:gap-20 gap-12">
+        <div className="flex max-[900px]:order-2 max-[900px]:max-w-[900px] max-w-[570px] w-full flex-col gap-2">
           {logo && !hideLogo && (
             <img src={logo} alt="" className="h-6 self-start" />
           )}
@@ -41,7 +41,7 @@ export default function ProjectHero({
           )}
 
           {links.length > 0 && (
-            <div className="w-[350px] mt-6 flex gap-5">
+            <div className="mt-6 flex w-full max-w-[350px] flex-wrap gap-5">
               {links.map((link) => (
                 <Button
                   key={link.label}
@@ -56,7 +56,7 @@ export default function ProjectHero({
           )}
         </div>
 
-        <div className="max-[1100px]:max-w-[500px] max-w-[620px] w-full">
+        <div className="max-[900px]:order-1 max-[1100px]:max-w-[500px] max-[900px]:max-w-[900px] max-w-[620px] w-full">
           {image && (
             <img src={image} alt={imageAlt} className="object-cover w-full" />
           )}
