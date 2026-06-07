@@ -198,7 +198,7 @@ export default function PetifyPage() {
         </section>
 
         {/* Reflection */}
-        <div className="flex gap-[30px]">
+        <div className="flex max-[500px]:flex-col gap-[30px]">
           <h3 className="text-xl text-[#E6E1F2]">Reflection</h3>
 
           <div className="grid gap-5 max-w-[550px] w-full flex-1">

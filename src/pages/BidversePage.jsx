@@ -237,10 +237,10 @@ export default function BidversePage() {
         </section>
       </div>
 
-      <div className="flex justify-center bg-[#D8D8FF] md:py-20 py-10 w-full px-4 sm:px-10 mt-[100px]">
+      <div className="flex justify-center bg-[#D8D8FF] md:py-20 py-10 w-full px-4 sm:px-10 mt-[100px] max-[800px]:mt-10">
         <div className="max-w-[1078px] w-full">
           <picture>
-            <source media="(max-width: 768px)" srcSet={styleGuideSmall} />
+            <source media="(max-width: 800px)" srcSet={styleGuideSmall} />
             <img
               src={styleGuide}
               alt="BidVerse style guide"
@@ -298,7 +298,7 @@ export default function BidversePage() {
           intuitive.
         </h3>
 
-        <div className="flex gap-[30px]">
+        <div className="flex max-[500px]:flex-col gap-[30px]">
           <h4 className="text-xl text-[#D8D8FF]">Reflection</h4>
 
           <div className="grid gap-5 max-w-[550px] w-full flex-1">

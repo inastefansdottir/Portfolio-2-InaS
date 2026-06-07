@@ -30,7 +30,7 @@ export default function ProjectHero({
 
           <h1 className="max-[1100px]:text-3xl text-[40px]">{title}</h1>
 
-          {meta && <p>{meta}</p>}
+          {meta && <p className="max-[900px]:text-xs">{meta}</p>}
 
           {description.length > 0 && (
             <div className="mt-3 grid gap-5">

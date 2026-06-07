@@ -40,9 +40,9 @@ export default function ShopPage() {
         ]}
       />
 
-      <div className="flex flex-col items-center mt-[250px] px-4 sm:px-10 gap-[250px]">
+      <div className="flex flex-col items-center mt-[250px] max-[900px]:mt-25 px-4 sm:px-10 gap-[250px] max-[900px]:gap-25">
         {/* Section 1 */}
-        <section className="flex justify-between items-start max-w-[1078px] w-full">
+        <section className="flex max-[900px]:flex-col justify-between items-start max-w-[1078px] w-full max-[900px]:gap-10">
           <div className="flex items-center gap-3">
             <span className="inline-block font-display text-[55px] leading-none text-[#3B82F6]">
               1.
@@ -51,7 +51,7 @@ export default function ShopPage() {
             <h2 className="w-[87px] text-xl leading-tight">Project Context</h2>
           </div>
 
-          <div className="grid gap-5 max-w-[525px] w-full">
+          <div className="grid gap-5 max-w-[525px] max-[900px]:max-w-full w-full">
             <p>
               This project was created as part of the JavaScript Frameworks
               course, where the main goal was to build a frontend application
@@ -68,7 +68,7 @@ export default function ShopPage() {
         </section>
 
         <section className="grid gap-[100px] max-w-[1078px] w-full">
-          <div className="flex justify-between items-start gap-[34px]">
+          <div className="flex max-[1000px]:flex-col justify-between items-start gap-[34px] max-[1000px]:gap-25">
             {/* Section 2 */}
             <div className="flex-1">
               <div className="flex items-center gap-3">
@@ -99,7 +99,7 @@ export default function ShopPage() {
                 or filtered to only show sale items.
               </p>
 
-              <div className="mt-[100px]">
+              <div className="mt-[100px] max-[1000px]:mt-15">
                 <video
                   src={video1}
                   autoPlay
@@ -139,7 +139,7 @@ export default function ShopPage() {
                 </p>
               </div>
 
-              <div className="">
+              <div className="max-[1000px]:mt-15">
                 <img src={image1} className="object-cover w-full" />
               </div>
             </div>
@@ -147,7 +147,7 @@ export default function ShopPage() {
         </section>
 
         {/* Section 4 */}
-        <div className="flex justify-between items-start max-w-[1078px] w-full mx-auto">
+        <div className="flex max-[900px]:flex-col justify-between items-start max-w-[1078px] w-full mx-auto max-[900px]:gap-10">
           <div className="flex items-center gap-3">
             <span className="inline-block font-display text-[55px] leading-none text-[#3B82F6]">
               4.
@@ -158,7 +158,7 @@ export default function ShopPage() {
             </h2>
           </div>
 
-          <div className="grid gap-5 max-w-[525px] w-full">
+          <div className="grid gap-5 max-w-[525px] max-[900px]:max-w-full w-full">
             <p>
               The shopping cart was the main functional part of the project.
             </p>
@@ -191,10 +191,10 @@ export default function ShopPage() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center mt-[250px] px-4 sm:px-10 gap-[250px]">
+      <div className="flex flex-col items-center mt-[250px] max-[900px]:mt-25 px-4 sm:px-10 gap-[250px] max-[900px]:gap-25">
         {/* Section 5 */}
-        <section className="flex justify-between max-w-[1078px] w-full">
-          <div>
+        <section className="flex max-[1100px]:flex-col justify-between max-w-[1078px] w-full max-[1100px]:gap-10">
+          <div className="max-[1100px]:flex max-[900px]:flex-col max-[1100px]:justify-between max-[900px]:gap-5">
             <div className="flex items-center gap-3">
               <span className="inline-block font-display text-[55px] leading-none text-[#3B82F6]">
                 5.
@@ -203,20 +203,20 @@ export default function ShopPage() {
               <h2 className="w-[87px] text-xl leading-tight">Contact Form</h2>
             </div>
 
-            <p className="mt-10 w-[400px]">
+            <p className="mt-10 max-[1100px]:mt-0 w-[400px] max-[1100px]:w-[525px] max-[900px]:w-full">
               A contact page was also included as a simple form-based page,
               giving the project a more complete shop structure beyond only
               product and cart views.
             </p>
           </div>
 
-          <div className="max-w-[520px] w-full">
+          <div className="max-[1100px]:max-w-full max-w-[520px] w-full">
             <img src={image2} alt="" className="w-full object-cover" />
           </div>
         </section>
 
         {/* Reflection */}
-        <div className="flex gap-[30px]">
+        <div className="flex gap-[30px] max-[900px]:flex-col">
           <h3 className="text-xl text-[#BFDBFE]">Reflection</h3>
 
           <div className="grid gap-5 max-w-[550px] w-full flex-1">
