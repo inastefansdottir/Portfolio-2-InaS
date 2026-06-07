@@ -2,13 +2,13 @@ import petifyLogo from "../assets/petify/petify-logo.svg";
 import ProjectHero from "../components/ProjectHero";
 import petifyMockup from "../assets/petify/petify-no-background.png";
 import Button from "../components/Button";
-import image1 from "../assets/petify/image-1.png";
-import image2 from "../assets/petify/image-2.png";
-import image3 from "../assets/petify/image-3.png";
-import image4 from "../assets/petify/image-4.png";
-import image5 from "../assets/petify/image-5.png";
-import image6 from "../assets/petify/image-6.png";
-import image7 from "../assets/petify/image-7.png";
+import image1 from "../assets/petify/image-1.webp";
+import image2 from "../assets/petify/image-2.webp";
+import image3 from "../assets/petify/image-3.webp";
+import image4 from "../assets/petify/image-4.webp";
+import image5 from "../assets/petify/image-5.webp";
+import image6 from "../assets/petify/image-6.webp";
+import video1 from "../assets/petify/video-1.webm";
 import styleGuide from "../assets/petify/style-guide.png";
 import ProjectNavCard from "../components/ProjectNavCard";
 import holidazeMockup from "../assets/holidaze/holidaze-mockup.png";
@@ -148,17 +148,21 @@ export default function PetifyPage() {
           <img
             src={image5}
             alt=""
-            className="h-auto max-h-[500px] min-w-0 object-contain"
+            className="flex-1 h-auto max-h-[500px] min-w-0 object-contain"
+          />
+          <video
+            src={video1}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="flex-1 object-cover w-full min-w-0 object-contain"
           />
           <img
             src={image6}
             alt=""
-            className="h-auto max-h-[500px] min-w-0 object-contain"
-          />
-          <img
-            src={image7}
-            alt=""
-            className="h-auto max-h-[500px] min-w-0 object-contain"
+            className="flex-1 h-auto max-h-[500px] min-w-0 object-contain"
           />
         </div>
       </div>
