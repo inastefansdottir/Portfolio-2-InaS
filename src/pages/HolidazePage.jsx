@@ -437,7 +437,7 @@ export default function HolidazePage() {
 
       <div>
         <section className="flex w-full justify-center px-4 mt-[250px] max-[900px]:mt-[100px] mb-20 sm:px-10">
-          <div className="flex w-full max-w-[1300px] justify-between gap-[36px]">
+          <div className="flex max-[600px]:flex-col w-full max-w-[1300px] justify-between gap-[36px]">
             <ProjectNavCard
               to="/projects/petify"
               image={petifyMockup}

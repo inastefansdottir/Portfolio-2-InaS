@@ -324,7 +324,7 @@ export default function BidversePage() {
         </div>
 
         <section className="flex w-full justify-center mb-20">
-          <div className="flex w-full max-w-[1300px] justify-between gap-[36px]">
+          <div className="flex max-[600px]:flex-col w-full max-w-[1300px] justify-between gap-[36px]">
             <ProjectNavCard
               to="/projects/holidaze"
               image={holidazeMockup}
@@ -339,6 +339,7 @@ export default function BidversePage() {
               label="Next Project"
               title="Online Shop"
               direction="next"
+              titleClass={"max-[750px]:w-[110px] max-[600px]:w-full"}
             />
           </div>
         </section>

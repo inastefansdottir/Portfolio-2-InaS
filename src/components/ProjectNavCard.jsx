@@ -8,6 +8,7 @@ export default function ProjectNavCard({
   image,
   label,
   title,
+  titleClass,
   direction = "next",
 }) {
   const isPrevious = direction === "previous";
@@ -15,7 +16,7 @@ export default function ProjectNavCard({
   return (
     <Link
       to={to}
-      className="group relative block h-[250px] w-full max-w-[415px] overflow-hidden"
+      className="group relative block h-[250px] max-[750px]:h-[200px] w-full max-w-[415px] max-[750px]:max-w-full overflow-hidden"
       aria-label={`${label}: ${title}`}
     >
       <img
@@ -42,17 +43,22 @@ export default function ProjectNavCard({
         >
           {isPrevious && (
             <span className="inline-block transition-transform duration-300 ease-out group-hover:-translate-x-4">
-              <ArrowLeft className="w-auto" />
+              <ArrowLeft className="w-auto max-[850px]:w-[35px]" />
             </span>
           )}
 
-          <h3 className="text-[34px] font-black uppercase leading-none tracking-wide w-auto">
+          <h3
+            className={clsx(
+              "text-[34px] font-black uppercase leading-none tracking-wide max-[850px]:text-2xl",
+              titleClass
+            )}
+          >
             {title}
           </h3>
 
           {!isPrevious && (
             <span className="inline-block transition-transform duration-300 ease-out group-hover:translate-x-4">
-              <ArrowRight className="w-auto" />
+              <ArrowRight className="w-auto max-[850px]:w-[35px]" />
             </span>
           )}
         </div>

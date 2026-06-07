@@ -24,8 +24,8 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="flex justify-center w-full py-[28px] px-4 sm:px-10">
-      <div className="flex items-center justify-between w-full max-w-[1300px]">
-        <p className="text-primary">
+      <div className="flex max-[764px]:flex-col items-center justify-between w-full max-w-[1300px] max-[764px]:gap-10">
+        <p className="text-primary max-[764px]:text-center">
           Copyright © 2026 Ína S Portfolio. All rights reserved.
         </p>
         <div className="flex gap-4">

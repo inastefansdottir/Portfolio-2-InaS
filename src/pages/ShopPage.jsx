@@ -234,7 +234,7 @@ export default function ShopPage() {
         </div>
 
         <section className="flex w-full justify-center mb-20">
-          <div className="flex w-full max-w-[1300px] justify-between gap-[36px]">
+          <div className="flex w-full max-[600px]:flex-col max-w-[1300px] justify-between gap-[36px]">
             <ProjectNavCard
               to="/projects/bidverse"
               image={bidverseMockup}
