@@ -1,9 +1,9 @@
 import shopMockup from "../assets/shop/shop-no-background.png";
 import ProjectHero from "../components/ProjectHero";
-import image1 from "../assets/shop/image-1.png";
-import image2 from "../assets/shop/image-2.png";
-import image3 from "../assets/shop/image-3.png";
-import image4 from "../assets/shop/image-4.png";
+import image1 from "../assets/shop/image-1.webp";
+import image2 from "../assets/shop/image-2.webp";
+import video1 from "../assets/shop/video-1.webm";
+import video2 from "../assets/shop/video-2.webm";
 import ProjectNavCard from "../components/ProjectNavCard";
 import petifyMockup from "../assets/petify/petify-css-mockup.png";
 import bidverseMockup from "../assets/bidverse/bidverse-mockup.png";
@@ -100,7 +100,15 @@ export default function ShopPage() {
               </p>
 
               <div className="mt-[100px]">
-                <img src={image1} className="object-cover w-full" />
+                <video
+                  src={video1}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  className="object-cover w-full"
+                />
               </div>
             </div>
 
@@ -132,7 +140,7 @@ export default function ShopPage() {
               </div>
 
               <div className="">
-                <img src={image2} className="object-cover w-full" />
+                <img src={image1} className="object-cover w-full" />
               </div>
             </div>
           </div>
@@ -171,7 +179,15 @@ export default function ShopPage() {
 
       <div className="flex justify-center bg-[#1D49C5]/50 py-[80px] w-full px-4 sm:px-10 mt-[100px]">
         <div className="max-w-[1078px] w-full">
-          <img src={image3} alt="" className="w-full object-cover" />
+          <video
+            src={video2}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="object-cover w-full"
+          />
         </div>
       </div>
 
@@ -195,7 +211,7 @@ export default function ShopPage() {
           </div>
 
           <div className="max-w-[520px] w-full">
-            <img src={image4} alt="" className="w-full object-cover" />
+            <img src={image2} alt="" className="w-full object-cover" />
           </div>
         </section>
 

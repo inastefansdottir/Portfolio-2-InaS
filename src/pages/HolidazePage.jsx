@@ -1,13 +1,19 @@
 import holidazeMockup from "../assets/holidaze/holidaze-no-background.png";
 import holidazeLogo from "../assets/logos/holidaze-logo.svg";
 import ProjectHero from "../components/ProjectHero";
-import image1 from "../assets/holidaze/image-1.png";
-import image2 from "../assets/holidaze/image-2.png";
-import image3 from "../assets/holidaze/image-3.png";
-import image4 from "../assets/holidaze/image-4.png";
-import image5 from "../assets/holidaze/image-5.png";
-import image6 from "../assets/holidaze/image-6.png";
-import image7 from "../assets/holidaze/image-7.png";
+import image1 from "../assets/holidaze/image-1.webp";
+import image2 from "../assets/holidaze/image-2.webp";
+import image3 from "../assets/holidaze/image-3.webp";
+import image4 from "../assets/holidaze/image-4.webp";
+import image5 from "../assets/holidaze/image-5.webp";
+import image6 from "../assets/holidaze/image-6.webp";
+import image7 from "../assets/holidaze/image-7.webp";
+import image8 from "../assets/holidaze/image-8.webp";
+import image9 from "../assets/holidaze/image-9.webp";
+import video1 from "../assets/holidaze/video-1.webm";
+import video2 from "../assets/holidaze/video-2.webm";
+import video3 from "../assets/holidaze/video-3.webm";
+import video4 from "../assets/holidaze/video-4.webm";
 import styleGuide from "../assets/holidaze/style-guide.png";
 import ProjectNavCard from "../components/ProjectNavCard";
 import petifyMockup from "../assets/petify/petify-css-mockup.png";
@@ -91,7 +97,7 @@ export default function HolidazePage() {
 
       {/* Section 2 */}
       <div className="flex justify-center bg-[#B4D8D8] w-full text-[#285260] px-4 sm:px-10">
-        <section className="flex justify-between items-start max-w-[1300px] w-full py-20">
+        <section className="flex justify-between items-center max-w-[1300px] w-full py-20">
           <div>
             <div className="flex items-center gap-3">
               <span className="inline-block font-display text-[55px] leading-non">
@@ -125,7 +131,15 @@ export default function HolidazePage() {
             </div>
           </div>
           <div className="max-w-[670px] pl-10">
-            <img src={image1} className="object-cover w-full" />
+            <video
+              src={video1}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              className="w-full h-full"
+            />
           </div>
         </section>
       </div>
@@ -170,7 +184,15 @@ export default function HolidazePage() {
             </div>
 
             <div className="w-full">
-              <img src={image4} className="object-cover w-full" />
+              <video
+                src={video2}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                className="w-full"
+              />
             </div>
           </section>
 
@@ -211,7 +233,15 @@ export default function HolidazePage() {
             </div>
 
             <div className="w-full">
-              <img src={image5} className="object-cover w-full" />
+              <video
+                src={video3}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                className="w-full"
+              />
             </div>
           </section>
 
@@ -254,16 +284,24 @@ export default function HolidazePage() {
             </div>
 
             <div className="flex w-full gap-[34px]">
-              <div>
+              <div className="flex-1">
                 <p className="text-xl font-bold mb-5">
                   Customer’s profile page
                 </p>
-                <img src={image6} className="object-cover w-full" />
+                <img src={image4} className="object-cover w-full" />
               </div>
 
-              <div>
+              <div className="flex-1">
                 <p className="text-xl font-bold mb-5">Manager’s profile page</p>
-                <img src={image7} className="object-cover w-full" />
+                <video
+                  src={video4}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  className="object-cover w-full"
+                />
               </div>
             </div>
           </section>
@@ -280,7 +318,7 @@ export default function HolidazePage() {
               </div>
 
               <div>
-                <img src={image6} className="object-cover w-full" />
+                <img src={image5} className="object-cover w-full" />
               </div>
 
               <div>
@@ -312,11 +350,11 @@ export default function HolidazePage() {
               </div>
 
               <div>
-                <img src={image6} className="object-cover w-full" />
+                <img src={image7} className="object-cover w-full" />
               </div>
 
               <div>
-                <img src={image6} className="object-cover w-full" />
+                <img src={image8} className="object-cover w-full" />
               </div>
             </div>
           </section>
@@ -358,7 +396,7 @@ export default function HolidazePage() {
               </div>
 
               <div>
-                <img src={image1} className="object-cover w-full" />
+                <img src={image9} className="object-cover w-full" />
               </div>
             </div>
 
