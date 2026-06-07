@@ -46,11 +46,11 @@ export default function PetifyPage() {
         ]}
       />
 
-      <div className="flex flex-col items-center mt-[250px] px-4 sm:px-10 gap-[250px]">
+      <div className="flex flex-col items-center mt-[250px] max-[900px]:mt-25 px-4 sm:px-10 gap-[250px] max-[800px]:gap-25">
         {/* Section 1 */}
         <section className="flex flex-col items-center gap-[60px]">
-          <div className="flex w-full max-w-[1078px] items-stretch justify-between">
-            <div className="flex flex-col justify-between self-stretch">
+          <div className="flex max-[900px]:flex-col w-full max-w-[1078px] items-stretch justify-between">
+            <div className="flex flex-col justify-between self-stretch max-[900px]:gap-10">
               <div className="flex items-center gap-3">
                 <span className="inline-block font-display text-[55px] leading-none text-[#A796E3]">
                   1.
@@ -64,12 +64,13 @@ export default function PetifyPage() {
               <Button
                 href="https://javascript-2-ca-inas-production.up.railway.app/"
                 variant="petify"
+                className="max-[900px]:self-start"
               >
                 VIEW ORIGINAL PROJECT
               </Button>
             </div>
 
-            <div className="grid w-full max-w-[525px] gap-5">
+            <div className="grid w-full max-w-[525px] gap-5 max-[900px]:mt-10">
               <p>
                 Petify was originally created as my JavaScript 2 course
                 assignment, a functional social media app for pets with posts,
@@ -85,7 +86,7 @@ export default function PetifyPage() {
             </div>
           </div>
 
-          <div className="flex w-full max-w-[1300px] items-center justify-between gap-[60px]">
+          <div className="flex w-full max-w-[1300px] items-center justify-between gap-[60px] max-[900px]:gap-5">
             <img
               src={image1}
               alt=""
@@ -98,7 +99,7 @@ export default function PetifyPage() {
             />
           </div>
 
-          <div className="flex w-full max-w-[1300px] items-center justify-between gap-[60px]">
+          <div className="flex w-full max-w-[1300px] items-center justify-between gap-[60px] max-[900px]:gap-5">
             <img
               src={image3}
               alt=""
@@ -117,7 +118,7 @@ export default function PetifyPage() {
         </section>
 
         {/* Section 2 */}
-        <div className="flex justify-between items-start max-w-[1078px] w-full mx-auto">
+        <div className="flex max-[800px]:flex-col justify-between items-start max-w-[1078px] w-full mx-auto max-[800px]:gap-10">
           <div className="flex items-center gap-3">
             <span className="inline-block font-display text-[55px] leading-none text-[#A796E3]">
               2.
@@ -144,7 +145,7 @@ export default function PetifyPage() {
       </div>
 
       <div className="flex justify-center bg-[#5F5AA5] w-full mt-[100px] px-4 sm:px-10">
-        <div className="my-20 flex w-full max-w-[1300px] items-center justify-between gap-5">
+        <div className="my-20 flex max-[1000px]:flex-col w-full max-w-[1300px] items-center justify-between gap-5">
           <img
             src={image5}
             alt=""
@@ -167,10 +168,10 @@ export default function PetifyPage() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center mt-[250px] px-4 sm:px-10 gap-[250px]">
+      <div className="flex flex-col items-center mt-[250px] max-[800px]:mt-25 px-4 sm:px-10 gap-[250px] max-[800px]:gap-25">
         {/* Section 3 */}
-        <section className="flex justify-between max-w-[1078px] w-full">
-          <div>
+        <section className="flex max-[1100px]:flex-col justify-between max-w-[1078px] w-full">
+          <div className="max-[1100px]:flex max-[800px]:flex-col max-[1100px]:justify-between max-[1100px]:items-start max-[800px]:gap-10">
             <div className="flex items-center gap-3">
               <span className="inline-block font-display text-[55px] leading-none text-[#A796E3]">
                 3.
@@ -179,7 +180,7 @@ export default function PetifyPage() {
               <h2 className="w-[87px] text-xl leading-tight">Visual Style</h2>
             </div>
 
-            <div className="mt-10 w-[400px]">
+            <div className="mt-10 max-[1100px]:mt-0 w-[400px] max-[1100px]:w-[525px] max-[800px]:w-full">
               <p>
                 The interface was designed to feel soft, playful, and friendly,
                 matching the pet-focused concept of the original project.
@@ -192,7 +193,7 @@ export default function PetifyPage() {
             </div>
           </div>
 
-          <div className="max-w-[520px] w-full">
+          <div className="max-w-[520px] max-[1100px]:max-w-full max-[1100px]:mt-10 w-full">
             <img src={styleGuide} alt="" className="w-full object-cover" />
           </div>
         </section>
