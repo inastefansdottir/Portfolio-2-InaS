@@ -13,6 +13,7 @@ import styleGuide from "../assets/petify/style-guide.png";
 import ProjectNavCard from "../components/ProjectNavCard";
 import holidazeMockup from "../assets/holidaze/holidaze-mockup.png";
 import shopMockup from "../assets/shop/shop-mockup.png";
+import Reveal from "../components/Reveal";
 
 export default function PetifyPage() {
   return (
@@ -49,7 +50,7 @@ export default function PetifyPage() {
       <div className="flex flex-col items-center mt-[250px] max-[900px]:mt-25 px-4 sm:px-10 gap-[250px] max-[800px]:gap-25">
         {/* Section 1 */}
         <section className="flex flex-col items-center gap-[60px]">
-          <div className="flex max-[900px]:flex-col w-full max-w-[1078px] items-stretch justify-between">
+          <Reveal className="flex max-[900px]:flex-col w-full max-w-[1078px] items-stretch justify-between">
             <div className="flex flex-col justify-between self-stretch max-[900px]:gap-10">
               <div className="flex items-center gap-3">
                 <span className="inline-block font-display text-[55px] leading-none text-[#A796E3]">
@@ -84,9 +85,9 @@ export default function PetifyPage() {
                 custom design direction.
               </p>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="flex w-full max-w-[1300px] items-center justify-between gap-[60px] max-[900px]:gap-5">
+          <Reveal className="flex w-full max-w-[1300px] items-center justify-between gap-[60px] max-[900px]:gap-5">
             <img
               src={image1}
               alt=""
@@ -97,9 +98,9 @@ export default function PetifyPage() {
               alt=""
               className="h-auto max-h-[580px] min-w-0 object-contain"
             />
-          </div>
+          </Reveal>
 
-          <div className="flex w-full max-w-[1300px] items-center justify-between gap-[60px] max-[900px]:gap-5">
+          <Reveal className="flex w-full max-w-[1300px] items-center justify-between gap-[60px] max-[900px]:gap-5">
             <img
               src={image3}
               alt=""
@@ -110,15 +111,15 @@ export default function PetifyPage() {
               alt=""
               className="h-auto max-h-[580px] min-w-0 object-contain"
             />
-          </div>
+          </Reveal>
 
-          <p className="self-start">
+          <Reveal className="self-start">
             Original JavaScript 2 project shown for context.
-          </p>
+          </Reveal>
         </section>
 
         {/* Section 2 */}
-        <div className="flex max-[800px]:flex-col justify-between items-start max-w-[1078px] w-full mx-auto max-[800px]:gap-10">
+        <Reveal className="flex max-[800px]:flex-col justify-between items-start max-w-[1078px] w-full mx-auto max-[800px]:gap-10">
           <div className="flex items-center gap-3">
             <span className="inline-block font-display text-[55px] leading-none text-[#A796E3]">
               2.
@@ -141,37 +142,45 @@ export default function PetifyPage() {
               Petify instead of a default Bootstrap template.
             </p>
           </div>
-        </div>
+        </Reveal>
       </div>
 
       <div className="flex justify-center bg-[#5F5AA5] w-full mt-[100px] px-4 sm:px-10">
         <div className="my-20 flex max-[1000px]:flex-col w-full max-w-[1300px] items-center justify-between gap-5">
-          <img
-            src={image5}
-            alt=""
-            className="flex-1 h-auto max-h-[500px] min-w-0 object-contain"
-          />
-          <video
-            src={video1}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            className="flex-1 object-cover w-full min-w-0 object-contain"
-          />
-          <img
-            src={image6}
-            alt=""
-            className="flex-1 h-auto max-h-[500px] min-w-0 object-contain"
-          />
+          <Reveal className="flex-1">
+            <img
+              src={image5}
+              alt=""
+              className="h-auto max-h-[500px] min-w-0 object-contain"
+            />
+          </Reveal>
+
+          <Reveal delay={0.1} className="flex-1">
+            <video
+              src={video1}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              className="object-cover w-full min-w-0 object-contain"
+            />
+          </Reveal>
+
+          <Reveal delay={0.2} className="flex-1">
+            <img
+              src={image6}
+              alt=""
+              className="h-auto max-h-[500px] min-w-0 object-contain"
+            />
+          </Reveal>
         </div>
       </div>
 
       <div className="flex flex-col items-center mt-[250px] max-[800px]:mt-25 px-4 sm:px-10 gap-[250px] max-[800px]:gap-25">
         {/* Section 3 */}
         <section className="flex max-[1100px]:flex-col justify-between max-w-[1078px] w-full">
-          <div className="max-[1100px]:flex max-[800px]:flex-col max-[1100px]:justify-between max-[1100px]:items-start max-[800px]:gap-10">
+          <Reveal className="max-[1100px]:flex max-[800px]:flex-col max-[1100px]:justify-between max-[1100px]:items-start max-[800px]:gap-10">
             <div className="flex items-center gap-3">
               <span className="inline-block font-display text-[55px] leading-none text-[#A796E3]">
                 3.
@@ -191,15 +200,15 @@ export default function PetifyPage() {
                 while keeping the pages simple and easy to navigate.
               </p>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="max-w-[520px] max-[1100px]:max-w-full max-[1100px]:mt-10 w-full">
+          <Reveal className="max-w-[520px] max-[1100px]:max-w-full max-[1100px]:mt-10 w-full">
             <img src={styleGuide} alt="" className="w-full object-cover" />
-          </div>
+          </Reveal>
         </section>
 
         {/* Reflection */}
-        <div className="flex max-[500px]:flex-col gap-[30px]">
+        <Reveal className="flex max-[500px]:flex-col gap-[30px]">
           <h3 className="text-xl text-[#E6E1F2]">Reflection</h3>
 
           <div className="grid gap-5 max-w-[550px] w-full flex-1">
@@ -213,10 +222,10 @@ export default function PetifyPage() {
               personal and customized visual style.
             </p>
           </div>
-        </div>
+        </Reveal>
 
         <section className="flex w-full justify-center mb-20">
-          <div className="flex max-[600px]:flex-col w-full max-w-[1300px] justify-between gap-[36px]">
+          <Reveal className="flex max-[600px]:flex-col w-full max-w-[1300px] justify-between gap-[36px]">
             <ProjectNavCard
               to="/projects/shop"
               image={shopMockup}
@@ -233,7 +242,7 @@ export default function PetifyPage() {
               title="Holidaze"
               direction="next"
             />
-          </div>
+          </Reveal>
         </section>
       </div>
     </div>

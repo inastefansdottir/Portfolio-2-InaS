@@ -18,6 +18,7 @@ import styleGuide from "../assets/holidaze/style-guide.png";
 import ProjectNavCard from "../components/ProjectNavCard";
 import petifyMockup from "../assets/petify/petify-css-mockup.png";
 import bidverseMockup from "../assets/bidverse/bidverse-mockup.png";
+import Reveal from "../components/Reveal";
 
 export default function HolidazePage() {
   return (
@@ -54,7 +55,7 @@ export default function HolidazePage() {
       {/* Main content */}
       <section className="flex flex-col items-center mt-[130px] px-4 sm:px-10">
         {/* Section 1 */}
-        <div className="flex max-[900px]:flex-col max-[900px]:gap-5 justify-between items-start max-w-[1078px] w-full">
+        <Reveal className="flex max-[900px]:flex-col max-[900px]:gap-5 justify-between items-start max-w-[1078px] w-full">
           <div className="flex items-center gap-3">
             <span className="inline-block font-display text-[55px] leading-none text-[#558C91]">
               1.
@@ -74,9 +75,9 @@ export default function HolidazePage() {
               hosted listings and incoming reservations.
             </p>
           </div>
-        </div>
+        </Reveal>
 
-        <div className="flex max-[900px]:flex-col mt-[100px] mb-[170px] flex w-full max-w-[1300px] items-center justify-between gap-5">
+        <Reveal className="flex max-[900px]:flex-col mt-[100px] mb-[170px] flex w-full max-w-[1300px] items-center justify-between gap-5">
           <img
             src={image1}
             alt=""
@@ -94,13 +95,13 @@ export default function HolidazePage() {
               className="h-auto max-h-[500px] max-[900px]:max-h-[700px] min-w-0 object-contain"
             />
           </div>
-        </div>
+        </Reveal>
       </section>
 
       {/* Section 2 */}
       <div className="flex justify-center bg-[#B4D8D8] w-full text-[#285260] px-4 sm:px-10">
         <section className="flex max-[1200px]:flex-col justify-between items-center max-w-[1300px] w-full py-20">
-          <div className="max-[1200px]:flex max-[900px]:flex-col max-[900px]:gap-5 max-[1200px]:items-start max-[1200px]:justify-between max-[1200px]:w-full">
+          <Reveal className="max-[1200px]:flex max-[900px]:flex-col max-[900px]:gap-5 max-[1200px]:items-start max-[1200px]:justify-between max-[1200px]:w-full">
             <div className="flex max-[1200px]:justify-between items-center gap-3">
               <span className="inline-block font-display text-[55px] leading-none">
                 2.
@@ -131,8 +132,12 @@ export default function HolidazePage() {
                 discovery feel useful, fast, and natural.
               </p>
             </div>
-          </div>
-          <div className="max-[1200px]:max-w-full max-w-[670px] pl-10 max-[1200px]:pl-0 max-[1200px]:mt-25">
+          </Reveal>
+
+          <Reveal
+            delay={0.2}
+            className="max-[1200px]:max-w-full max-w-[670px] pl-10 max-[1200px]:pl-0 max-[1200px]:mt-25"
+          >
             <video
               src={video1}
               autoPlay
@@ -142,7 +147,7 @@ export default function HolidazePage() {
               preload="metadata"
               className="w-full h-full"
             />
-          </div>
+          </Reveal>
         </section>
       </div>
 
@@ -150,7 +155,7 @@ export default function HolidazePage() {
         <div className="flex flex-col items-center max-w-[1078px] w-full mt-[170px] gap-[250px] max-[900px]:gap-[100px]">
           {/* Section 3 */}
           <section className="grid gap-[100px]">
-            <div className="flex max-[900px]:flex-col max-[900px]:gap-5 justify-between items-start">
+            <Reveal className="flex max-[900px]:flex-col max-[900px]:gap-5 justify-between items-start">
               <div className="flex items-center gap-3">
                 <span className="inline-block font-display text-[55px] leading-none text-[#558C91]">
                   3.
@@ -183,9 +188,9 @@ export default function HolidazePage() {
                   details, and confirming their stay in a focused flow.
                 </p>
               </div>
-            </div>
+            </Reveal>
 
-            <div className="w-full">
+            <Reveal className="w-full">
               <video
                 src={video2}
                 autoPlay
@@ -195,12 +200,12 @@ export default function HolidazePage() {
                 preload="metadata"
                 className="w-full"
               />
-            </div>
+            </Reveal>
           </section>
 
           {/* Section 4 */}
           <section className="grid gap-[100px]">
-            <div className="flex max-[900px]:flex-col max-[900px]:gap-5 justify-between items-start">
+            <Reveal className="flex max-[900px]:flex-col max-[900px]:gap-5 justify-between items-start">
               <div className="flex items-center gap-3">
                 <span className="inline-block font-display text-[55px] leading-none text-[#558C91]">
                   4.
@@ -232,9 +237,9 @@ export default function HolidazePage() {
                   still felt powerful enough for users hosting multiple venues.
                 </p>
               </div>
-            </div>
+            </Reveal>
 
-            <div className="w-full">
+            <Reveal className="w-full">
               <video
                 src={video3}
                 autoPlay
@@ -244,12 +249,12 @@ export default function HolidazePage() {
                 preload="metadata"
                 className="w-full"
               />
-            </div>
+            </Reveal>
           </section>
 
           {/* Section 5 */}
           <section className="grid gap-[100px]">
-            <div className="flex max-[900px]:flex-col justify-between items-start gap-[34px]">
+            <Reveal className="flex max-[900px]:flex-col justify-between items-start gap-[34px]">
               <div className="flex-1">
                 <div className="flex items-center gap-3">
                   <span className="inline-block font-display text-[55px] leading-none text-[#558C91]">
@@ -283,9 +288,9 @@ export default function HolidazePage() {
                   for keeping track of venue activity.
                 </p>
               </div>
-            </div>
+            </Reveal>
 
-            <div className="flex max-[900px]:flex-col w-full gap-[34px]">
+            <Reveal className="flex max-[900px]:flex-col w-full gap-[34px]">
               <div className="flex-1">
                 <p className="text-xl font-bold mb-5">
                   Customer’s profile page
@@ -305,12 +310,12 @@ export default function HolidazePage() {
                   className="object-cover w-full"
                 />
               </div>
-            </div>
+            </Reveal>
           </section>
 
           {/* Section 6 */}
           <section className="flex max-[1200px]:flex-col gap-[36px]">
-            <div className="grid gap-10">
+            <Reveal className="grid gap-10">
               <div className="flex items-center gap-3">
                 <span className="inline-block font-display text-[55px] leading-none text-[#558C91]">
                   6.
@@ -333,9 +338,9 @@ export default function HolidazePage() {
                 validation feedback, and button styling, making the interface
                 feel more cohesive and predictable.
               </p>
-            </div>
+            </Reveal>
 
-            <div className="grid gap-10">
+            <Reveal className="grid gap-10">
               <div className="grid gap-5 max-w-[525px] w-full flex-1">
                 <p>
                   Holidaze uses modals for key actions such as logging in,
@@ -358,12 +363,12 @@ export default function HolidazePage() {
               <div>
                 <img src={image8} className="object-cover w-full" />
               </div>
-            </div>
+            </Reveal>
           </section>
 
           {/* Section 7 */}
           <section className="flex max-[800px]:flex-col gap-[36px]">
-            <div className="flex flex-col justify-between flex-1 max-[800px]:gap-[36px]">
+            <Reveal className="flex flex-col justify-between flex-1 max-[800px]:gap-[36px]">
               <div className="grid gap-5 max-w-[525px]">
                 <div className="flex items-center gap-3">
                   <span className="inline-block font-display text-[55px] leading-none text-[#558C91]">
@@ -402,18 +407,20 @@ export default function HolidazePage() {
               <div>
                 <img src={image9} className="object-cover w-full" />
               </div>
-            </div>
+            </Reveal>
 
-            <div className="flex-1 ml-20 max-[1000px]:ml-0">
+            <Reveal className="flex-1 ml-20 max-[1000px]:ml-0">
               <img src={styleGuide} className="object-cover w-full" />
-            </div>
+            </Reveal>
           </section>
 
-          <h3 className="self-center text-center text-3xl text-[#B4D8D8] max-w-[500px] w-full">
-            A complete booking experience, from discovery to management.
-          </h3>
+          <Reveal>
+            <h3 className="self-center text-center text-3xl text-[#B4D8D8] max-w-[500px] w-full">
+              A complete booking experience, from discovery to management.
+            </h3>
+          </Reveal>
 
-          <div className="flex max-[500px]:flex-col gap-[30px]">
+          <Reveal className="flex max-[500px]:flex-col gap-[30px]">
             <h4 className="text-xl text-[#B4D8D8]">Reflection</h4>
 
             <div className="grid gap-5 max-w-[550px] w-full flex-1">
@@ -431,7 +438,7 @@ export default function HolidazePage() {
                 functionality feel simple.
               </p>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
 

@@ -7,6 +7,7 @@ import video2 from "../assets/shop/video-2.webm";
 import ProjectNavCard from "../components/ProjectNavCard";
 import petifyMockup from "../assets/petify/petify-css-mockup.png";
 import bidverseMockup from "../assets/bidverse/bidverse-mockup.png";
+import Reveal from "../components/Reveal";
 
 export default function ShopPage() {
   return (
@@ -43,15 +44,15 @@ export default function ShopPage() {
       <div className="flex flex-col items-center mt-[250px] max-[900px]:mt-25 px-4 sm:px-10 gap-[250px] max-[900px]:gap-25">
         {/* Section 1 */}
         <section className="flex max-[900px]:flex-col justify-between items-start max-w-[1078px] w-full max-[900px]:gap-10">
-          <div className="flex items-center gap-3">
+          <Reveal className="flex items-center gap-3">
             <span className="inline-block font-display text-[55px] leading-none text-[#3B82F6]">
               1.
             </span>
 
             <h2 className="w-[87px] text-xl leading-tight">Project Context</h2>
-          </div>
+          </Reveal>
 
-          <div className="grid gap-5 max-w-[525px] max-[900px]:max-w-full w-full">
+          <Reveal className="grid gap-5 max-w-[525px] max-[900px]:max-w-full w-full">
             <p>
               This project was created as part of the JavaScript Frameworks
               course, where the main goal was to build a frontend application
@@ -64,13 +65,13 @@ export default function ShopPage() {
               gave me practice working with React components, TypeScript,
               routing, API data, and shared cart state across multiple pages.
             </p>
-          </div>
+          </Reveal>
         </section>
 
         <section className="grid gap-[100px] max-w-[1078px] w-full">
           <div className="flex max-[1000px]:flex-col justify-between items-start gap-[34px] max-[1000px]:gap-25">
             {/* Section 2 */}
-            <div className="flex-1">
+            <Reveal className="flex-1">
               <div className="flex items-center gap-3">
                 <span className="inline-block font-display text-[55px] leading-none text-[#3B82F6]">
                   2.
@@ -110,10 +111,10 @@ export default function ShopPage() {
                   className="object-cover w-full"
                 />
               </div>
-            </div>
+            </Reveal>
 
             {/* Section 3 */}
-            <div className="flex flex-col flex-1 h-full justify-between">
+            <Reveal className="flex flex-col flex-1 h-full justify-between">
               <div>
                 <div className="flex items-center gap-3">
                   <span className="inline-block font-display text-[55px] leading-none text-[#3B82F6]">
@@ -142,12 +143,12 @@ export default function ShopPage() {
               <div className="max-[1000px]:mt-15">
                 <img src={image1} className="object-cover w-full" />
               </div>
-            </div>
+            </Reveal>
           </div>
         </section>
 
         {/* Section 4 */}
-        <div className="flex max-[900px]:flex-col justify-between items-start max-w-[1078px] w-full mx-auto max-[900px]:gap-10">
+        <Reveal className="flex max-[900px]:flex-col justify-between items-start max-w-[1078px] w-full mx-auto max-[900px]:gap-10">
           <div className="flex items-center gap-3">
             <span className="inline-block font-display text-[55px] leading-none text-[#3B82F6]">
               4.
@@ -174,11 +175,11 @@ export default function ShopPage() {
               confirming an order.
             </p>
           </div>
-        </div>
+        </Reveal>
       </div>
 
       <div className="flex justify-center bg-[#1D49C5]/50 py-[80px] w-full px-4 sm:px-10 mt-[100px]">
-        <div className="max-w-[1078px] w-full">
+        <Reveal className="max-w-[1078px] w-full">
           <video
             src={video2}
             autoPlay
@@ -188,12 +189,12 @@ export default function ShopPage() {
             preload="metadata"
             className="object-cover w-full"
           />
-        </div>
+        </Reveal>
       </div>
 
       <div className="flex flex-col items-center mt-[250px] max-[900px]:mt-25 px-4 sm:px-10 gap-[250px] max-[900px]:gap-25">
         {/* Section 5 */}
-        <section className="flex max-[1100px]:flex-col justify-between max-w-[1078px] w-full max-[1100px]:gap-10">
+        <Reveal className="flex max-[1100px]:flex-col justify-between max-w-[1078px] w-full max-[1100px]:gap-10">
           <div className="max-[1100px]:flex max-[900px]:flex-col max-[1100px]:justify-between max-[900px]:gap-5">
             <div className="flex items-center gap-3">
               <span className="inline-block font-display text-[55px] leading-none text-[#3B82F6]">
@@ -213,10 +214,10 @@ export default function ShopPage() {
           <div className="max-[1100px]:max-w-full max-w-[520px] w-full">
             <img src={image2} alt="" className="w-full object-cover" />
           </div>
-        </section>
+        </Reveal>
 
         {/* Reflection */}
-        <div className="flex gap-[30px] max-[900px]:flex-col">
+        <Reveal className="flex gap-[30px] max-[900px]:flex-col">
           <h3 className="text-xl text-[#BFDBFE]">Reflection</h3>
 
           <div className="grid gap-5 max-w-[550px] w-full flex-1">
@@ -231,10 +232,10 @@ export default function ShopPage() {
               managing shared cart behavior across the application.
             </p>
           </div>
-        </div>
+        </Reveal>
 
         <section className="flex w-full justify-center mb-20">
-          <div className="flex w-full max-[600px]:flex-col max-w-[1300px] justify-between gap-[36px]">
+          <Reveal className="flex w-full max-[600px]:flex-col max-w-[1300px] justify-between gap-[36px]">
             <ProjectNavCard
               to="/projects/bidverse"
               image={bidverseMockup}
@@ -250,7 +251,7 @@ export default function ShopPage() {
               title="Petify"
               direction="next"
             />
-          </div>
+          </Reveal>
         </section>
       </div>
     </div>
