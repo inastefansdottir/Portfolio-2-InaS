@@ -26,7 +26,6 @@ export default function App() {
             </DarkLayout>
           }
         />
-
         <Route
           path="/projects/holidaze"
           element={
