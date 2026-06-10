@@ -7,6 +7,7 @@ import Button from "../components/Button";
 import BlueArrow from "../assets/icons/blue-arrow.svg?react";
 
 import ResumeRow from "../components/ResumeRow";
+import MobileResumeSection from "../components/MobileResumeSection";
 
 import Reveal from "../components/Reveal";
 
@@ -41,94 +42,109 @@ import Gaming from "../assets/icons/hobbies/gaming.svg?react";
 import Puzzles from "../assets/icons/hobbies/puzzles.svg?react";
 
 // Content for resume
+const educationItems = [
+  {
+    title: "Noroff School of Technology and Digital Media",
+    place: "Online, Norway",
+    subtitle: "Higher education diploma",
+    date: "August 2024 - June 2026",
+    role: "Front-end Development",
+  },
+  {
+    title: "Arts University Bournemouth",
+    place: "Bournemouth, England",
+    subtitle: "Bachelors with honours (one year)",
+    date: "October 2023 - June 2024",
+    role: "Graphic Design BA (Hons)",
+  },
+  {
+    title: "Borgarholtsskóli",
+    place: "Grafarvogur, Iceland",
+    subtitle: "Stúdentspróf",
+    date: "August 2019 - May 2023",
+    role: "Graphic Design",
+  },
+  {
+    title: "Fjölbrautaskóli Suðurnesja",
+    place: "Reykjanesbær, Iceland",
+    subtitle: "Stúdentspróf (Transfer to Borgarholtsskóli)",
+    date: "August 2018 - May 2019",
+    role: "Traditional Art",
+  },
+];
+
+const experienceItems = [
+  {
+    title: "Hrund Clinical Consulting ehf",
+    place: "Freelance, Iceland",
+    subtitle: "UI/UX Design & Frontend Development",
+    date: "January 2026 - April 2026",
+    description: (
+      <>
+        <span className="font-bold">Designed and developed</span> the full
+        frontend of a responsive website for a clinical consulting company, with
+        a strong focus on clean UI/UX, accessibility, and performance.
+        Integrated backend APIs for contact functionality, contributed to
+        deployment setup, and applied SEO best practices to improve visibility.
+      </>
+    ),
+  },
+  {
+    title: "Icelandair",
+    place: "Kefairport, Iceland",
+    subtitle: "Airline (Summer role)",
+    date: "June 2023 - September 2023",
+    role: "Check-in Agent",
+  },
+  {
+    title: "Baseparking",
+    place: "Kefairport, Iceland",
+    subtitle: "Valet parking",
+    date: "August 2019 - March 2020",
+    role: "Manager & Driver",
+  },
+];
+
 const rows = [
   {
     lineHeight: "170px",
-    left: {
-      title: "Noroff School of Technology and Digital Media",
-      place: "Online, Norway",
-      subtitle: "Higher education diploma",
-      date: "August 2024 - June 2026",
-      role: "Front-end Development",
-    },
-    right: {
-      title: "Hrund Clinical Consulting ehf",
-      place: "Freelance, Iceland",
-      subtitle: "UI/UX Design & Frontend Development",
-      date: "January 2026 - April 2026",
-      description: (
-        <>
-          <span className="font-semibold">Designed and developed</span> the full
-          frontend of a responsive website for a clinical consulting company,
-          with a strong focus on clean UI/UX, accessibility, and performance.
-          Integrated backend APIs for contact functionality, contributed to
-          deployment setup, and applied SEO best practices to improve
-          visibility.
-        </>
-      ),
-    },
+    left: educationItems[0],
+    right: experienceItems[0],
   },
   {
     lineHeight: "67px",
-    left: {
-      title: "Arts University Bournemouth",
-      place: "Bournemouth, England",
-      subtitle: "Bachelors with honours (one year)",
-      date: "October 2023 - June 2024",
-      role: "Graphic Design BA (Hons)",
-    },
+    left: educationItems[1],
     right: null,
   },
   {
     lineHeight: "78px",
     left: null,
-    right: {
-      title: "Icelandair",
-      place: "Kefairport, Iceland",
-      subtitle: "Airline (Summer role)",
-      date: "June 2023 - September 2023",
-      role: "Check-in Agent",
-    },
+    right: experienceItems[1],
   },
   {
     lineHeight: "78px",
-    left: {
-      title: "Borgarholtsskóli",
-      place: "Grafarvogur, Iceland",
-      subtitle: "Stúdentspróf",
-      date: "August 2019 - May 2023",
-      role: "Graphic Design",
-    },
-    right: {
-      title: "Baseparking",
-      place: "Kefairport, Iceland",
-      subtitle: "Valet parking",
-      date: "August 2019 - March 2020",
-      role: "Manager & Driver",
-    },
+    left: educationItems[2],
+    right: experienceItems[2],
   },
   {
-    left: {
-      title: "Fjölbrautaskóli Suðurnesja",
-      place: "Reykjanesbær, Iceland",
-      subtitle: "Stúdentspróf (Transfer to Borgarholtsskóli)",
-      date: "August 2018 - May 2019",
-      role: "Traditional Art",
-    },
+    lineHeight: "0px",
+    left: educationItems[3],
     right: null,
   },
 ];
 
 export default function AboutPage() {
   return (
-    <div className="flex flex-col items-center px-4 sm:px-10">
-      <section className="flex justify-between items-center max-w-[1300px] w-full">
+    <div className="flex flex-col items-center overflow-x-clip px-4 sm:px-10">
+      {/* Introduction section */}
+      <section className="flex max-[750px]:flex-col justify-between items-center max-w-[1300px] max-[1050px]:mt-15 w-full">
         <Reveal className="flex flex-col gap-4 max-w-[570px] w-full">
-          <h1 className="text-primary text-[70px] w-full leading-none">
+          <h1 className="text-primary text-[70px] max-[1050px]:text-[58px] max-[950px]:text-[48px] w-full leading-none">
             Hello, <br />
             I'm Ína S.
           </h1>
-          <p>
+
+          <p className="max-[950px]:text-sm">
             I’m a{" "}
             <span className="font-bold">
               UI/UX designer and frontend developer
@@ -138,63 +154,76 @@ export default function AboutPage() {
             how things feel to use, not just how they look, and I approach every
             project with the user in mind.
           </p>
-          <p>
+
+          <p className="max-[950px]:text-sm">
             I enjoy solving UX problems and turning ideas into intuitive,
             well-structured interfaces, then bringing them to life through code.
             I’m naturally curious and always looking to improve, whether that
             means refining details, learning new technologies, or exploring
             better solutions through feedback and iteration.
           </p>
-          <p className="text-secondary">
+
+          <p className="text-secondary max-[950px]:text-sm">
             Based in Norway, originally from Iceland —{" "}
             <span className="font-bold">open to remote opportunities.</span>
           </p>
         </Reveal>
 
-        <Reveal className="max-w-[530px]">
+        <Reveal className="max-w-[530px] max-[950px]:max-w-[400px] max-[820px]:max-w-[350px] max-[820px]:max-w-full">
           <img src={portrait} className="w-full" />
         </Reveal>
       </section>
 
       <Reveal>
-        <h2 className="text-secondary text-[48px] my-25">RESUME</h2>
+        <h2 className="text-secondary text-[48px] max-[760px]:text-4xl my-25">
+          RESUME
+        </h2>
       </Reveal>
 
-      <div className="grid grid-cols-[1fr_80px_1fr] gap-x-10 max-w-[1300px] w-full mb-[250px]">
-        {/* Header row */}
-        <Reveal>
-          <h3 className="text-center text-3xl font-bold text-primary mb-10">
-            Education
-          </h3>
-        </Reveal>
+      {/* Resume desktop */}
+      <div className="max-[760px]:hidden">
+        <div className="grid grid-cols-[1fr_80px_1fr] gap-x-10 max-w-[1300px] w-full mb-[250px]">
+          <Reveal>
+            <h3 className="pb-8 text-center text-3xl font-bold mb-10 tracking-[0.15em] text-primary">
+              Education
+            </h3>
+          </Reveal>
 
-        <div />
+          <div />
 
-        <Reveal>
-          <h3 className="text-center text-3xl font-bold text-primary mb-10">
-            Experience
-          </h3>
-        </Reveal>
+          <Reveal>
+            <h3 className="pb-8 text-center text-3xl font-bold mb-10 tracking-[0.15em] text-primary">
+              Experience
+            </h3>
+          </Reveal>
 
-        {/* Resume rows */}
-        {rows.map((row, index) => (
-          <ResumeRow
-            key={index}
-            left={row.left}
-            right={row.right}
-            lineHeight={row.lineHeight}
-            isLast={index === rows.length - 1}
-          />
-        ))}
+          {rows.map((row, index) => (
+            <ResumeRow
+              key={index}
+              left={row.left}
+              right={row.right}
+              lineHeight={row.lineHeight}
+              isLast={index === rows.length - 1}
+            />
+          ))}
+        </div>
       </div>
 
+      {/* Resume mobile */}
+      <div className="hidden max-[760px]:block w-full max-w-[650px] mb-[160px]">
+        <MobileResumeSection title="Education" items={educationItems} />
+        <MobileResumeSection title="Experience" items={experienceItems} />
+      </div>
+
+      {/* Technical skills */}
       <div className="max-w-[1300px] w-full">
         <Reveal>
           <h3 className="text-primary text-3xl mb-5">TECHNICAL SKILLS</h3>
         </Reveal>
 
-        <Reveal className="flex justify-between gap-10 mb-25">
-          <div>
+        <Reveal className="flex max-[764px]:flex-col justify-between gap-10 mb-25">
+          {/* Front-end tools section */}
+          <div className="max-[980px]:flex-1">
             <h4 className="text-2xl mb-5">Front-end Tools</h4>
 
             <div className="flex flex-wrap gap-5 max-w-[420px] w-full">
@@ -272,7 +301,8 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div>
+          {/* Design tools section */}
+          <div className="max-[980px]:flex-1">
             <h4 className="text-2xl mb-5">Design Tools</h4>
 
             <div className="flex flex-wrap gap-5 max-w-[420px] w-full">
@@ -315,8 +345,9 @@ export default function AboutPage() {
           </div>
         </Reveal>
 
-        <Reveal className="flex justify-between gap-10 mb-25">
-          <div>
+        <Reveal className="flex max-[764px]:flex-col  justify-between gap-10 mb-25">
+          {/* Language section */}
+          <div className="max-[980px]:flex-1">
             <h3 className="text-primary text-3xl mb-3">LANGUAGES</h3>
 
             <div className="flex flex-col text-xl gap-2">
@@ -335,7 +366,8 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div>
+          {/* Hobbies tools section */}
+          <div className="max-[980px]:flex-1">
             <h3 className="text-primary text-3xl mb-5">HOBBIES</h3>
 
             <div className="flex flex-wrap gap-5 max-w-[420px] w-full">
@@ -378,8 +410,9 @@ export default function AboutPage() {
           </div>
         </Reveal>
 
-        <Reveal className="flex justify-between gap-10 mb-25">
-          <div>
+        <Reveal className="flex max-[764px]:flex-col  justify-between gap-10 mb-25">
+          {/* Achievements section */}
+          <div className="max-[980px]:flex-1">
             <h3 className="text-primary text-3xl mb-3">ACHIEVEMENTS</h3>
 
             <div className="flex flex-col text-xl gap-2">
@@ -399,7 +432,8 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="max-w-[420px] w-full">
+          {/* Contact section */}
+          <div className="max-[980px]:flex-1 max-w-[420px] w-full">
             <p className="mb-4 text-xl">
               Interested in working together or have a project in mind?{" "}
               <span className="font-bold">Feel free to reach out.</span>
