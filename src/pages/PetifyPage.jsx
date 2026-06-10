@@ -98,12 +98,12 @@ export default function PetifyPage() {
             <Reveal className="flex w-full max-w-[1300px] items-center justify-between gap-[60px] max-[900px]:gap-5">
               <img
                 src={image1}
-                alt=""
+                alt="Screenshot of the original petify's website profile page"
                 className="h-auto max-h-[580px] min-w-0 object-contain"
               />
               <img
                 src={image2}
-                alt=""
+                alt="Screenshot of the original petify's website home page, mobile version"
                 className="h-auto max-h-[580px] min-w-0 object-contain"
               />
             </Reveal>
@@ -111,12 +111,12 @@ export default function PetifyPage() {
             <Reveal className="flex w-full max-w-[1300px] items-center justify-between gap-[60px] max-[900px]:gap-5">
               <img
                 src={image3}
-                alt=""
+                alt="Screenshot of the original petify's website create post page, mobile version"
                 className="h-auto max-h-[580px] min-w-0 object-contain"
               />
               <img
                 src={image4}
-                alt=""
+                alt="Screenshot of the original petify's website specific posts page"
                 className="h-auto max-h-[580px] min-w-0 object-contain"
               />
             </Reveal>
@@ -158,7 +158,7 @@ export default function PetifyPage() {
             <Reveal className="flex-1">
               <img
                 src={image5}
-                alt=""
+                alt="Petify login page"
                 className="h-auto max-h-[500px] min-w-0 object-contain"
               />
             </Reveal>
@@ -166,6 +166,7 @@ export default function PetifyPage() {
             <Reveal delay={0.1} className="flex-1">
               <video
                 src={video1}
+                alt="Video of the petify's feed page"
                 autoPlay
                 muted
                 loop
@@ -178,7 +179,7 @@ export default function PetifyPage() {
             <Reveal delay={0.2} className="flex-1">
               <img
                 src={image6}
-                alt=""
+                alt="Petify profile page"
                 className="h-auto max-h-[500px] min-w-0 object-contain"
               />
             </Reveal>
@@ -213,7 +214,11 @@ export default function PetifyPage() {
             </Reveal>
 
             <Reveal className="max-w-[520px] max-[1100px]:max-w-full max-[1100px]:mt-10 w-full">
-              <img src={styleGuide} alt="" className="w-full object-cover" />
+              <img
+                src={styleGuide}
+                alt="Screenshot of Petify's figma file"
+                className="w-full object-cover"
+              />
             </Reveal>
           </section>
 

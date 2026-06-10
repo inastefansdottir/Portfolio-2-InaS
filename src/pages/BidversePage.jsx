@@ -95,18 +95,18 @@ export default function BidversePage() {
                 <div className="flex max-[900px]:flex-col mt-[100px] mb-[170px] max-[900px]:mb-25 flex w-full max-w-[1300px] items-center justify-between gap-5">
                   <img
                     src={image1}
-                    alt=""
+                    alt="Bidverse screenshot of homepage, desktop version"
                     className="h-auto max-h-[500px] max-[900px]:max-h-[700px] min-w-0 object-contain"
                   />
                   <div className="flex gap-5">
                     <img
                       src={image2}
-                      alt=""
+                      alt="Bidverse screenshot of homepage, tablet version"
                       className="h-auto max-h-[500px] max-[900px]:max-h-[700px] min-w-0 object-contain"
                     />
                     <img
                       src={image3}
-                      alt=""
+                      alt="Bidverse screenshot of homepage, mobile version"
                       className="h-auto max-h-[500px] max-[900px]:max-h-[700px] min-w-0 object-contain"
                     />
                   </div>
@@ -123,6 +123,7 @@ export default function BidversePage() {
                 <div className="max-w-[850px] w-full pl-10 max-[900px]:pl-0">
                   <video
                     src={video1}
+                    alt="Video showing the auction flow on the bidverse website"
                     autoPlay
                     muted
                     loop
@@ -171,6 +172,7 @@ export default function BidversePage() {
             <div className="max-w-[1078px] w-full">
               <video
                 src={video2}
+                alt="Video showing user switch between viewing their active listings and bids"
                 autoPlay
                 muted
                 loop
@@ -210,7 +212,11 @@ export default function BidversePage() {
                 </p>
 
                 <div className="mt-[100px]">
-                  <img src={image4} className="object-cover w-full" />
+                  <img
+                    src={image4}
+                    alt="Screenshot of bidverse profile page highlighting the credits componontents"
+                    className="object-cover w-full"
+                  />
                 </div>
               </div>
 
@@ -240,6 +246,7 @@ export default function BidversePage() {
                 <div className="mt-[100px]">
                   <video
                     src={video3}
+                    alt="Video of cloudinary integration on the edit profile page on Bidverse"
                     autoPlay
                     muted
                     loop
@@ -309,7 +316,7 @@ export default function BidversePage() {
                 <Reveal delay={0.05}>
                   <img
                     src={image5}
-                    alt=""
+                    alt="Bidverse hero sectin on the home page"
                     className="h-full w-full object-cover"
                   />
                 </Reveal>
@@ -318,7 +325,7 @@ export default function BidversePage() {
                   <Reveal delay={0.1}>
                     <img
                       src={image6}
-                      alt=""
+                      alt="Bidverse listings page"
                       className="h-full w-full object-cover"
                     />
                   </Reveal>
@@ -326,7 +333,7 @@ export default function BidversePage() {
                   <Reveal delay={0.15}>
                     <img
                       src={image7}
-                      alt=""
+                      alt="Bidverse profile page"
                       className="h-full w-full object-cover"
                     />
                   </Reveal>
@@ -334,7 +341,7 @@ export default function BidversePage() {
                   <Reveal delay={0.2}>
                     <img
                       src={image8}
-                      alt=""
+                      alt="Bidverse specific listing page"
                       className="h-full w-full object-cover"
                     />
                   </Reveal>
@@ -342,7 +349,7 @@ export default function BidversePage() {
                   <Reveal delay={0.25}>
                     <img
                       src={image9}
-                      alt=""
+                      alt="Bidverse edit profile page"
                       className="h-full w-full object-cover"
                     />
                   </Reveal>

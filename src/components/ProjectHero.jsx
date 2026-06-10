@@ -26,7 +26,7 @@ export default function ProjectHero({
       <Reveal className="flex max-[900px]:flex-col w-full max-w-[1300px] max-[1100px]:text-sm items-center justify-between max-[900px]:gap-20 gap-12">
         <div className="flex max-[900px]:order-2 max-[900px]:max-w-[900px] max-w-[570px] w-full flex-col gap-2">
           {logo && !hideLogo && (
-            <img src={logo} alt="" className="h-6 self-start" />
+            <img src={logo} alt="projects logo" className="h-6 self-start" />
           )}
 
           <h1 className="max-[1100px]:text-3xl text-[40px]">{title}</h1>

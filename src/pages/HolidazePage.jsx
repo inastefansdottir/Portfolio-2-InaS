@@ -87,18 +87,18 @@ export default function HolidazePage() {
           <Reveal className="flex max-[900px]:flex-col mt-[100px] mb-[170px] flex w-full max-w-[1300px] items-center justify-between gap-5">
             <img
               src={image1}
-              alt=""
+              alt="Screenshot of Holidaze homepage, desktop version"
               className="h-auto max-h-[500px] max-[900px]:max-h-[700px] min-w-0 object-contain"
             />
             <div className="flex gap-5">
               <img
                 src={image2}
-                alt=""
+                alt="Screenshot of Holidaze homepage, tablet version"
                 className="h-auto max-h-[500px] max-[900px]:max-h-[700px] min-w-0 object-contain"
               />
               <img
                 src={image3}
-                alt=""
+                alt="Screenshot of Holidaze homepage, mobile version"
                 className="h-auto max-h-[500px] max-[900px]:max-h-[700px] min-w-0 object-contain"
               />
             </div>
@@ -147,6 +147,7 @@ export default function HolidazePage() {
             >
               <video
                 src={video1}
+                alt="Video showing Holidaze's search function"
                 autoPlay
                 muted
                 loop
@@ -200,6 +201,7 @@ export default function HolidazePage() {
               <Reveal className="w-full">
                 <video
                   src={video2}
+                  alt="Video showing Holidaze's booking flow"
                   autoPlay
                   muted
                   loop
@@ -250,6 +252,7 @@ export default function HolidazePage() {
               <Reveal className="w-full">
                 <video
                   src={video3}
+                  alt="Video showing managers edit and delete venue"
                   autoPlay
                   muted
                   loop
@@ -303,7 +306,11 @@ export default function HolidazePage() {
                   <p className="text-xl font-bold mb-5">
                     Customer’s profile page
                   </p>
-                  <img src={image4} className="object-cover w-full" />
+                  <img
+                    src={image4}
+                    alt="customers profile page"
+                    className="object-cover w-full"
+                  />
                 </div>
 
                 <div className="flex-1">
@@ -312,6 +319,7 @@ export default function HolidazePage() {
                   </p>
                   <video
                     src={video4}
+                    alt="Video of managers switching between veiwing their venues and their bookings on the profile page."
                     autoPlay
                     muted
                     loop
@@ -337,11 +345,19 @@ export default function HolidazePage() {
                 </div>
 
                 <div>
-                  <img src={image5} className="object-cover w-full" />
+                  <img
+                    src={image5}
+                    alt="Holidaze edit profile modal"
+                    className="object-cover w-full"
+                  />
                 </div>
 
                 <div>
-                  <img src={image6} className="object-cover w-full" />
+                  <img
+                    src={image6}
+                    alt="Holidaze create new venue modal"
+                    className="object-cover w-full"
+                  />
                 </div>
 
                 <p>
@@ -369,11 +385,19 @@ export default function HolidazePage() {
                 </div>
 
                 <div>
-                  <img src={image7} className="object-cover w-full" />
+                  <img
+                    src={image7}
+                    alt="Holidaze edit venue modal"
+                    className="object-cover w-full"
+                  />
                 </div>
 
                 <div>
-                  <img src={image8} className="object-cover w-full" />
+                  <img
+                    src={image8}
+                    alt="Holidaze login modal"
+                    className="object-cover w-full"
+                  />
                 </div>
               </Reveal>
             </section>
@@ -414,16 +438,28 @@ export default function HolidazePage() {
                 </div>
 
                 <div>
-                  <img src={image1} className="object-cover w-full" />
+                  <img
+                    src={image1}
+                    alt="Holidaze home page"
+                    className="object-cover w-full"
+                  />
                 </div>
 
                 <div>
-                  <img src={image9} className="object-cover w-full" />
+                  <img
+                    src={image9}
+                    alt="Holidaze venue page"
+                    className="object-cover w-full"
+                  />
                 </div>
               </Reveal>
 
               <Reveal className="flex-1 ml-20 max-[1000px]:ml-0">
-                <img src={styleGuide} className="object-cover w-full" />
+                <img
+                  src={styleGuide}
+                  alt="Holidaze style guide"
+                  className="object-cover w-full"
+                />
               </Reveal>
             </section>
 

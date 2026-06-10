@@ -114,6 +114,7 @@ export default function ShopPage() {
                 <div className="mt-[100px] max-[1000px]:mt-15">
                   <video
                     src={video1}
+                    alt="Video of the shop websites showing the homepage/all products page"
                     autoPlay
                     muted
                     loop
@@ -152,7 +153,11 @@ export default function ShopPage() {
                 </div>
 
                 <div className="max-[1000px]:mt-15">
-                  <img src={image1} className="object-cover w-full" />
+                  <img
+                    src={image1}
+                    alt="online shop specific product page"
+                    className="object-cover w-full"
+                  />
                 </div>
               </Reveal>
             </div>
@@ -193,6 +198,7 @@ export default function ShopPage() {
           <Reveal className="max-w-[1078px] w-full">
             <video
               src={video2}
+              alt="Video of the shop websites showing the add to cart and checkout flow"
               autoPlay
               muted
               loop
@@ -223,7 +229,11 @@ export default function ShopPage() {
             </div>
 
             <div className="max-[1100px]:max-w-full max-w-[520px] w-full">
-              <img src={image2} alt="" className="w-full object-cover" />
+              <img
+                src={image2}
+                alt="online shop contact page"
+                className="w-full object-cover"
+              />
             </div>
           </Reveal>
 
