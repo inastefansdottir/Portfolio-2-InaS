@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import Button from "./Button";
+import Reveal from "./Reveal";
 
 export default function ProjectHero({
   logo,
@@ -22,7 +23,7 @@ export default function ProjectHero({
       )}
       style={{ "--tw-gradient-to": gradientTo }}
     >
-      <div className="flex max-[900px]:flex-col w-full max-w-[1300px] max-[1100px]:text-sm items-center justify-between max-[900px]:gap-20 gap-12">
+      <Reveal className="flex max-[900px]:flex-col w-full max-w-[1300px] max-[1100px]:text-sm items-center justify-between max-[900px]:gap-20 gap-12">
         <div className="flex max-[900px]:order-2 max-[900px]:max-w-[900px] max-w-[570px] w-full flex-col gap-2">
           {logo && !hideLogo && (
             <img src={logo} alt="" className="h-6 self-start" />
@@ -61,7 +62,7 @@ export default function ProjectHero({
             <img src={image} alt={imageAlt} className="object-cover w-full" />
           )}
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }
