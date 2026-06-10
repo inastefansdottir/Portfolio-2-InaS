@@ -1,6 +1,6 @@
 import SEO from "../components/SEO";
 import holidazeMockup from "../assets/holidaze/holidaze-no-background.png";
-import holidazeLogo from "../assets/logos/holidaze-logo.svg";
+import holidazeLogo from "../assets/holidaze/holidaze-logo.svg";
 import ProjectHero from "../components/ProjectHero";
 import image1 from "../assets/holidaze/image-1.webp";
 import image2 from "../assets/holidaze/image-2.webp";
