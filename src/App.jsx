@@ -4,6 +4,7 @@ import ProjectLayout from "./layout/ProjectLayout";
 import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import ProjectsPage from "./pages/ProjectsPage";
 import HolidazePage from "./pages/HolidazePage";
 import BidversePage from "./pages/BidversePage";
 import ShopPage from "./pages/ShopPage";
@@ -26,6 +27,16 @@ export default function App() {
             </DarkLayout>
           }
         />
+
+        <Route
+          path="/projects"
+          element={
+            <DarkLayout>
+              <ProjectsPage />
+            </DarkLayout>
+          }
+        />
+
         <Route
           path="/projects/holidaze"
           element={
@@ -34,6 +45,7 @@ export default function App() {
             </ProjectLayout>
           }
         />
+
         <Route
           path="/projects/bidverse"
           element={
@@ -42,6 +54,7 @@ export default function App() {
             </ProjectLayout>
           }
         />
+
         <Route
           path="/projects/shop"
           element={
@@ -50,6 +63,7 @@ export default function App() {
             </ProjectLayout>
           }
         />
+
         <Route
           path="/projects/petify"
           element={
@@ -58,6 +72,7 @@ export default function App() {
             </ProjectLayout>
           }
         />
+
         <Route
           path="/not-found"
           element={
